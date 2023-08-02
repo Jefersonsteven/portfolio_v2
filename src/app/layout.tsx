@@ -1,4 +1,5 @@
 import './scss/globals.scss'
+import 'normalize.css'
 import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
 import React from 'react'
