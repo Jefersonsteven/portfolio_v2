@@ -1,0 +1,157 @@
+{
+  "header": {
+    "views": "Views"
+  },
+  "home": {
+    "name": "Jeffer Steven Núñez",
+    "rol": "Front End | Fullstack Developer"
+  },
+  "about_me": {
+    "title": "About me",
+    "photo": "",
+    "country": "Colombia",
+    "native_language": "Native Spanish",
+    "second_language": "English | A1",
+    "description": [
+      {
+        "id": "1",
+        "paragraph": "My name is Jeffer Steven, a Frontend focused Fullstack Web Developer with experience in web application design and development."
+      },
+      {
+        "id": "2",
+        "paragraph": " I have completed several projects, both in courses and in a bootcamp and in my spare time, some of which are available in my projects."
+      },
+      {
+        "id": "3",
+        "paragraph": " I am actively looking for exciting and challenging opportunities to continue to grow as a web developer."
+      }
+    ],
+    "certificates": "certificates"
+  },
+  "tech_and_tools": {
+    "title": "Technologies and tools",
+    "stack": [
+      "git",
+      "html",
+      "css",
+      "sass",
+      "tailwind",
+      "javascript",
+      "typescript",
+      "python",
+      "react",
+      "react router",
+      "react query",
+      "redux",
+      "nextjs",
+      "github",
+      "json",
+      "webpack",
+      "eslint",
+      "vite",
+      "npm",
+      "babel",
+      "nodejs",
+      "express",
+      "sequelize",
+      "postgresql",
+      "insomnia",
+      "firebase",
+      "vscode",
+      "vercel",
+      "aws",
+      "netlify",
+      "windows",
+      "ubuntu",
+      "photoshop",
+      "illustrator",
+      "figma",
+      "open ai"
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "data": [
+      {
+        "id": "p1",
+        "team": false,
+        "title": "Pokedex",
+        "gif": "/",
+        "tech_stack": [
+          "redux",
+          "react",
+          "sass",
+          "javascript",
+          "nodejs",
+          "expressjs",
+          "sequelize",
+          "api",
+          "postgresql"
+        ],
+        "description": {
+          "title": "Summary",
+          "content": "The web app is a complete Pokédex that gives users the ability to search, filter, and explore detailed Pokémon information. Allows you to create new Pokémon and store them in a database. With sorting options and details like type, abilities, stats, and moves, it provides a comprehensive experience for Pokémon fans."
+        },
+        "rol": "Fullstack Developer",
+        "tasks": {
+          "title": "Tasks",
+          "data": [
+            {
+              "id": "t1",
+              "title": "Form to create pokemons",
+              "content": "Design and development of an intuitive form so that users can create new pokemons"
+            },
+            {
+              "id": "t2",
+              "title": "Building Components and Views",
+              "content": "Design and development of views and components necessary for users to see the pokemons, plus their filtering and paging"
+            },
+            {
+              "id": "t3",
+              "title": "Creation of database models",
+              "content": "Relational database implementation to be able to save created pokemons and be able to add them to favorites"
+            },
+            {
+              "id": "t4",
+              "title": "Creation of server and routes",
+              "content": "Construction of the server plus its routes through which the client can communicate to consume both the pokemon-api to see the pokemons and the database to create and edit pokemons"
+            }
+          ]
+        },
+        "web": "",
+        "github": ""
+      },
+      {
+        "id": "p2",
+        "team": true,
+        "title": "Tools Match",
+        "gif": "/",
+        "tech_stack": [
+          "nextjs",
+          "react",
+          "tailwind",
+          "javascript",
+          "css",
+          "api"
+        ],
+        "description": {
+          "title": "Summary",
+          "content": "ToolMatch is a web application developed as a final group project during the Henry Full Stack Developer bootcamp. The application follows Scrum methodology and GitHub Flow. It is designed to facilitate the buying, selling, and renting of used tools within Latin American neighborhoods."
+        },
+        "rol": "Front End Developer",
+        "tasks": {
+          "title": "Tasks",
+          "data": [
+            {
+              "id": "t1",
+              "title": "Design and development of view for the product",
+              "content": "Creation of view for the detail of the product publication (title, user, location and price)."
+            }
+          ]
+        },
+        "web": "",
+        "github": ""
+      }
+    ]
+  }
+}
