@@ -1,6 +1,42 @@
 {
   "header": {
-    "views": "Views"
+    "views": "Views",
+    "navigation": [
+      {
+        "title": "home",
+        "href": "/#home"
+      },
+      {
+        "title": "about me",
+        "href": "/#aboutme"
+      },
+      {
+        "title": "tech and tools",
+        "href": "/#techandtools"
+      },
+      {
+        "title": "projects",
+        "href": "/#projects"
+      },
+      {
+        "title": "contact",
+        "href": "/#contact"
+      }
+    ],
+    "social_media": [
+      {
+        "title": "linkedin",
+        "href": "https://www.linkedin.com/in/jeffersonsteven/"
+      },
+      {
+        "title": "instagram",
+        "href": "https://www.instagram.com/jefersonsteven_/"
+      },
+      {
+        "title": "github",
+        "href": "https://github.com/Jefersonsteven"
+      }
+    ]
   },
   "home": {
     "name": "Jeffer Steven Núñez",
@@ -81,6 +117,7 @@
           "redux",
           "react",
           "sass",
+          "react router",
           "javascript",
           "nodejs",
           "expressjs",
@@ -119,7 +156,7 @@
           ]
         },
         "web": "",
-        "github": ""
+        "github": "https://github.com/Jefersonsteven/pokemon-app"
       },
       {
         "id": "p2",
@@ -146,12 +183,161 @@
               "id": "t1",
               "title": "Design and development of view for the product",
               "content": "Creation of view for the detail of the product publication (title, user, location and price)."
+            },
+            {
+              "id": "t2",
+              "title": "Design and development of product publication form",
+              "content": "With the use of the geolocation api of the browser, the products are published with their coordinates to later be able to filter by distance."
+            },
+            {
+              "id": "t3",
+              "title": "Design and development of the header",
+              "content": "Develop the main navigation bar, which allowed smooth navigation between the different sections of the site."
+            },
+            {
+              "id": "t4",
+              "title": "Design and development of the purchase or lease completion form",
+              "content": "Creation of the form that allows the user to finalize their purchase or lease allowing them to choose between the option of paying on delivery or with market payment."
+            },
+            {
+              "id": "t5",
+              "title": "Deploy web application in vercel",
+              "content": "Implementation of the launch of the web application in vercel."
             }
           ]
         },
-        "web": "",
+        "web": "https://tools-match-eight.vercel.app/",
+        "github": "https://github.com/Jefersonsteven/tools-match"
+      },
+      {
+        "id": "p3",
+        "team": true,
+        "title": "Uva",
+        "gif": "/",
+        "tech_stack": [
+          "redux",
+          "react",
+          "tailwind",
+          "javascript",
+          "react router",
+          "expressjs",
+          "nodejs",
+          "cloudinary",
+          "firebase",
+          "vite",
+          "mongodb"
+        ],
+        "description": {
+          "title": "Summary",
+          "content": "Platform where you can see projects, apps, etc. that are looking for programmers who want to collaborate on a project."
+        },
+        "rol": "Front End Developer",
+        "tasks": {
+          "title": "Tasks",
+          "data": [
+            {
+              "id": "t1",
+              "title": "Form to create project",
+              "content": "Implement an intuitive form so that users can create new projects, facilitating the collection of relevant information."
+            },
+            {
+              "id": "t2",
+              "title": "Landing Page",
+              "content": "I developed the home page of the website."
+            },
+            {
+              "id": "t3",
+              "title": "Development of the header",
+              "content": "Develop the main navigation bar, which allowed smooth navigation between the different sections of the site."
+            },
+            {
+              "id": "t3",
+              "title": "User profile view",
+              "content": "Creation of a page where users can see and update their personal information, such as name, photo and technologies in which they work."
+            },
+            {
+              "id": "t4",
+              "title": "Deploy web application in vercel",
+              "content": "Implementation of the web application launch and 'render.com' server."
+            },
+            {
+              "id": "t5",
+              "title": "Editing modals",
+              "content": "I implemented small modals that allow users to edit their photo, personal information, technology stack and profile description."
+            },
+            {
+              "id": "t6",
+              "title": "View of 'About us'",
+              "content": "I developed the page that shows the information of the creators of the web application. This section includes a brief explanation about the developer group and its goals, allowing users to learn more about who is behind the project."
+            },
+            {
+              "id": "t7",
+              "title": "Password matching and encryption functionality with JWT",
+              "content": "I used JSON Web Tokens (JWT) to encrypt and decrypt the passwords in the login and registration forms. JWT provided an additional layer of security and enabled strong authentication between the client and the server."
+            }
+          ]
+        },
+        "web": "https://uva-to1s.onrender.com/",
         "github": ""
       }
     ]
-  }
+  },
+  "more_projects": {
+    "title": "More projects",
+    "data": [
+      {
+        "id": "mp1",
+        "gif": "/",
+        "title": "Calculate Geometric",
+        "web": "http://jeffersondev.eso.soy.s3-website.us-east-2.amazonaws.com/",
+        "github": "https://github.com/Jefersonsteven/math-aplication-JS-FG",
+        "tech_stack": ["html", "css", "javascript", "aws"]
+      },
+      {
+        "id": "mp2",
+        "gif": "/",
+        "title": "Advice generator app",
+        "web": "https://advice-generator-app-jeffer.netlify.app/",
+        "github": "https://github.com/Jefersonsteven/Advice-Generator-App",
+        "tech_stack": ["html", "css", "javascript", "api", "netlify"]
+      },
+      {
+        "id": "mp3",
+        "gif": "/",
+        "title": "Eco Store",
+        "web": "https://eco-store-jeffer.netlify.app/",
+        "github": "https://github.com/Jefersonsteven/eco-store-platzi",
+        "tech_stack": ["html", "sass", "netlify"]
+      },
+      {
+        "id": "mp4",
+        "gif": "/",
+        "title": "Clock App",
+        "web": "https://clock-app-hazel.vercel.app/",
+        "github": "https://github.com/Jefersonsteven/clock-app",
+        "tech_stack": ["nextjs", "tailwind", "javascript", "api", "vercel"]
+      },
+      {
+        "id": "mp5",
+        "gif": "/",
+        "title": "Entertaiment Web App",
+        "web": "https://entertainment-web-app-jeffer-24c083.netlify.app/",
+        "github": "https://github.com/Jefersonsteven/entertainment-web-app",
+        "tech_stack": ["react", "redux", "sass", "react router", "netlify"]
+      },
+      {
+        "id": "mp6",
+        "gif": "/",
+        "title": "Calculator App",
+        "web": "https://calculator-ts-jeffer.netlify.app/",
+        "github": "https://github.com/Jefersonsteven/calculator-typescript-app",
+        "tech_stack": ["typescript", "sass", "html", "netlify"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "Ready to face challenges with bravery and passion."
+  },
+  "footer": "Designed in Figma and coded in Visual Studio Code by yours truly @Jeffersonsteven. Built with Next.js, Strapi and Sass, implemented with Vercel. All text is set in the Inter and Montserrat font."
 }

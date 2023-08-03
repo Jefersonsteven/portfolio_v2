@@ -1,0 +1,343 @@
+{
+  "header": {
+    "views": "Vistas",
+    "navigation": [
+      {
+        "title": "inicio",
+        "href": "/#home"
+      },
+      {
+        "title": "sobre mí",
+        "href": "/#aboutme"
+      },
+      {
+        "title": "tecnologías y herramientas",
+        "href": "/#techandtools"
+      },
+      {
+        "title": "proyectos",
+        "href": "/#projects"
+      },
+      {
+        "title": "contacto",
+        "href": "/#contact"
+      }
+    ],
+    "social_media": [
+      {
+        "title": "linkedin",
+        "href": "https://www.linkedin.com/in/jeffersonsteven/"
+      },
+      {
+        "title": "instagram",
+        "href": "https://www.instagram.com/jefersonsteven_/"
+      },
+      {
+        "title": "github",
+        "href": "https://github.com/Jefersonsteven"
+      }
+    ]
+  },
+  "home": {
+    "name": "Jeffer Steven Núñez",
+    "rol": "Desarrollador Front End | Fullstack"
+  },
+  "about_me": {
+    "title": "Sobre mí",
+    "photo": "",
+    "country": "Colombia",
+    "native_language": "Español nativo",
+    "second_language": "Inglés | A1",
+    "description": [
+      {
+        "id": "1",
+        "paragraph": "Mi nombre es Jeffer Steven, un desarrollador web Fullstack enfocado en Frontend con experiencia en diseño y desarrollo de aplicaciones web."
+      },
+      {
+        "id": "2",
+        "paragraph": "He completado varios proyectos, tanto en cursos como en un bootcamp y en mi tiempo libre, algunos de los cuales están disponibles en mis proyectos."
+      },
+      {
+        "id": "3",
+        "paragraph": "Estoy buscando activamente emocionantes oportunidades desafiantes para seguir creciendo como desarrollador web."
+      }
+    ],
+    "certificates": "certificados"
+  },
+  "tech_and_tools": {
+    "title": "Tecnologías y herramientas",
+    "stack": [
+      "git",
+      "html",
+      "css",
+      "sass",
+      "tailwind",
+      "javascript",
+      "typescript",
+      "python",
+      "react",
+      "react router",
+      "react query",
+      "redux",
+      "nextjs",
+      "github",
+      "json",
+      "webpack",
+      "eslint",
+      "vite",
+      "npm",
+      "babel",
+      "nodejs",
+      "express",
+      "sequelize",
+      "postgresql",
+      "insomnia",
+      "firebase",
+      "vscode",
+      "vercel",
+      "aws",
+      "netlify",
+      "windows",
+      "ubuntu",
+      "photoshop",
+      "illustrator",
+      "figma",
+      "open ai"
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "data": [
+      {
+        "id": "p1",
+        "team": false,
+        "title": "Pokedex",
+        "gif": "/",
+        "tech_stack": [
+          "redux",
+          "react",
+          "sass",
+          "react router",
+          "javascript",
+          "nodejs",
+          "expressjs",
+          "sequelize",
+          "api",
+          "postgresql"
+        ],
+        "description": {
+          "title": "Resumen",
+          "content": "La aplicación web es una completa Pokédex que permite a los usuarios buscar, filtrar y explorar información detallada de los Pokémon. Permite crear nuevos Pokémon y almacenarlos en una base de datos. Con opciones de clasificación y detalles como tipo, habilidades, estadísticas y movimientos, ofrece una experiencia completa para los fanáticos de Pokémon."
+        },
+        "rol": "Desarrollador Fullstack",
+        "tasks": {
+          "title": "Tareas",
+          "data": [
+            {
+              "id": "t1",
+              "title": "Formulario para crear pokemons",
+              "content": "Diseño y desarrollo de un formulario intuitivo para que los usuarios puedan crear nuevos pokemons."
+            },
+            {
+              "id": "t2",
+              "title": "Construcción de componentes y vistas",
+              "content": "Diseño y desarrollo de vistas y componentes necesarios para que los usuarios vean los pokemons, además de sus opciones de filtrado y paginación."
+            },
+            {
+              "id": "t3",
+              "title": "Creación de modelos de base de datos",
+              "content": "Implementación de una base de datos relacional para poder guardar los pokemons creados y agregarlos a favoritos."
+            },
+            {
+              "id": "t4",
+              "title": "Creación del servidor y rutas",
+              "content": "Construcción del servidor junto con sus rutas a través de las cuales el cliente puede comunicarse para consumir tanto la pokemon-api para ver los pokemons como la base de datos para crear y editar pokemons."
+            }
+          ]
+        },
+        "web": "",
+        "github": "https://github.com/Jefersonsteven/pokemon-app"
+      },
+      {
+        "id": "p2",
+        "team": true,
+        "title": "Tools Match",
+        "gif": "/",
+        "tech_stack": [
+          "nextjs",
+          "react",
+          "tailwind",
+          "javascript",
+          "css",
+          "api"
+        ],
+        "description": {
+          "title": "Resumen",
+          "content": "ToolMatch es una aplicación web desarrollada como proyecto final de grupo durante el bootcamp de Desarrollador Full Stack de Henry. La aplicación sigue la metodología Scrum y GitHub Flow. Está diseñada para facilitar la compra, venta y alquiler de herramientas usadas en vecindarios latinoamericanos."
+        },
+        "rol": "Desarrollador Front End",
+        "tasks": {
+          "title": "Tareas",
+          "data": [
+            {
+              "id": "t1",
+              "title": "Diseño y desarrollo de vista para el producto",
+              "content": "Creación de vista para el detalle de la publicación del producto (título, usuario, ubicación y precio)."
+            },
+            {
+              "id": "t2",
+              "title": "Diseño y desarrollo del formulario de publicación de productos",
+              "content": "Con el uso de la API de geolocalización del navegador, se publican los productos con sus coordenadas para luego poder filtrar por distancia."
+            },
+            {
+              "id": "t3",
+              "title": "Diseño y desarrollo del encabezado",
+              "content": "Desarrollar la barra de navegación principal, que permitió una navegación fluida entre las diferentes secciones del sitio."
+            },
+            {
+              "id": "t4",
+              "title": "Diseño y desarrollo del formulario de finalización de compra o alquiler",
+              "content": "Creación del formulario que permite al usuario finalizar su compra o alquiler permitiéndoles elegir entre la opción de pago contra entrega o con pago de mercado."
+            },
+            {
+              "id": "t5",
+              "title": "Implementación de la aplicación web en vercel",
+              "content": "Implementación del lanzamiento de la aplicación web en vercel."
+            }
+          ]
+        },
+        "web": "https://tools-match-eight.vercel.app/",
+        "github": "https://github.com/Jefersonsteven/tools-match"
+      },
+      {
+        "id": "p3",
+        "team": true,
+        "title": "Uva",
+        "gif": "/",
+        "tech_stack": [
+          "redux",
+          "react",
+          "tailwind",
+          "javascript",
+          "react router",
+          "expressjs",
+          "nodejs",
+          "cloudinary",
+          "firebase",
+          "vite",
+          "mongodb"
+        ],
+        "description": {
+          "title": "Resumen",
+          "content": "Plataforma donde se pueden ver proyectos, aplicaciones, etc. que buscan programadores que deseen colaborar en un proyecto."
+        },
+        "rol": "Desarrollador Front End",
+        "tasks": {
+          "title": "Tareas",
+          "data": [
+            {
+              "id": "t1",
+              "title": "Formulario para crear proyecto",
+              "content": "Implementación de un formulario intuitivo para que los usuarios puedan crear nuevos proyectos, facilitando la recopilación de información relevante."
+            },
+            {
+              "id": "t2",
+              "title": "Página de inicio (Landing Page)",
+              "content": "Desarrollé la página de inicio del sitio web."
+            },
+            {
+              "id": "t3",
+              "title": "Desarrollo del encabezado",
+              "content": "Desarrollar la barra de navegación principal, que permitió una navegación fluida entre las diferentes secciones del sitio."
+            },
+            {
+              "id": "t3",
+              "title": "Vista del perfil del usuario",
+              "content": "Creación de una página donde los usuarios pueden ver y actualizar su información personal, como nombre, foto y tecnologías en las que trabajan."
+            },
+            {
+              "id": "t4",
+              "title": "Implementación de la aplicación web en vercel",
+              "content": "Implementación del lanzamiento de la aplicación web en vercel y servidor 'render.com'."
+            },
+            {
+              "id": "t5",
+              "title": "Modales de edición",
+              "content": "Implementé pequeños modales que permiten a los usuarios editar su foto, información personal, conjunto de tecnologías y descripción del perfil."
+            },
+            {
+              "id": "t6",
+              "title": "Vista de 'Sobre nosotros'",
+              "content": "Desarrollé la página que muestra la información de los creadores de la aplicación web. Esta sección incluye una breve explicación sobre el grupo de desarrolladores y sus objetivos, permitiendo a los usuarios conocer más sobre quiénes están detrás del proyecto."
+            },
+            {
+              "id": "t7",
+              "title": "Funcionalidad de coincidencia y cifrado de contraseñas con JWT",
+              "content": "Utilicé Tokens Web JSON (JWT) para cifrar y descifrar las contraseñas en los formularios de inicio de sesión y registro. JWT proporcionó una capa adicional de seguridad y permitió una autenticación sólida entre el cliente y el servidor."
+            }
+          ]
+        },
+        "web": "https://uva-to1s.onrender.com/",
+        "github": ""
+      }
+    ]
+  },
+  "more_projects": {
+    "title": "Más proyectos",
+    "data": [
+      {
+        "id": "mp1",
+        "gif": "/",
+        "title": "Calculadora Geométrica",
+        "web": "http://jeffersondev.eso.soy.s3-website.us-east-2.amazonaws.com/",
+        "github": "https://github.com/Jefersonsteven/math-aplication-JS-FG",
+        "tech_stack": ["html", "css", "javascript", "aws"]
+      },
+      {
+        "id": "mp2",
+        "gif": "/",
+        "title": "Aplicación Generadora de Consejos",
+        "web": "https://advice-generator-app-jeffer.netlify.app/",
+        "github": "https://github.com/Jefersonsteven/Advice-Generator-App",
+        "tech_stack": ["html", "css", "javascript", "api", "netlify"]
+      },
+      {
+        "id": "mp3",
+        "gif": "/",
+        "title": "Tienda Ecológica",
+        "web": "https://eco-store-jeffer.netlify.app/",
+        "github": "https://github.com/Jefersonsteven/eco-store-platzi",
+        "tech_stack": ["html", "sass", "netlify"]
+      },
+      {
+        "id": "mp4",
+        "gif": "/",
+        "title": "Aplicación de Reloj",
+        "web": "https://clock-app-hazel.vercel.app/",
+        "github": "https://github.com/Jefersonsteven/clock-app",
+        "tech_stack": ["nextjs", "tailwind", "javascript", "api", "vercel"]
+      },
+      {
+        "id": "mp5",
+        "gif": "/",
+        "title": "Aplicación Web de Entretenimiento",
+        "web": "https://entertainment-web-app-jeffer-24c083.netlify.app/",
+        "github": "https://github.com/Jefersonsteven/entertainment-web-app",
+        "tech_stack": ["react", "redux", "sass", "react router", "netlify"]
+      },
+      {
+        "id": "mp6",
+        "gif": "/",
+        "title": "Calculadora",
+        "web": "https://calculator-ts-jeffer.netlify.app/",
+        "github": "https://github.com/Jefersonsteven/calculator-typescript-app",
+        "tech_stack": ["typescript", "sass", "html", "netlify"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "content": "Listo para enfrentar desafíos con valentía y pasión."
+  },
+  "footer": "Diseñado en Figma y codificado en Visual Studio Code por su servidor @Jeffersonsteven. Construido con Next.js, Strapi y Sass, implementado con Vercel. Todo el texto está configurado en la fuente Inter y Montserrat."
+}
