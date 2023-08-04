@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL")
+  directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model View {
+  id       String @id @default(uuid())
+  ip       String @unique
+  city     String
+  region   String
+  country  String
+  loc      String
+  org      String
+  postal   String
+  timezone String
+}
+
+model Certificate {
+  id          String   @id @default(uuid())
+  name        String
+  url         String
+  category    Category @default(unspecified)
+  institution String
+  date        DateTime
+}
+
+enum Category {
+  design
+  development
+  personal_development
+  unspecified
+}
