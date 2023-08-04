@@ -3,5 +3,5 @@ import { create } from 'zustand'
 
 export const useMenuStore = create<MenuStore>((set) => ({
   menu: null,
-  setMenu: (element: HTMLElement) => { set((state) => ({ menu: element })) }
+  setMenu: (element: HTMLElement) => { set(() => ({ menu: element })) }
 }))

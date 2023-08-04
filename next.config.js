@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/comma-dangle */
+/* eslint-disable @typescript-eslint/semi */
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {

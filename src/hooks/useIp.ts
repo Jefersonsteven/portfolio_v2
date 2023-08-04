@@ -1,4 +1,5 @@
-import { ApiIp } from './../app/api/ip'
+import { type Pagination, type Views } from '@/types'
+import { ApiIp, ApiViews } from './../app/api/ip'
 import { useQuery } from '@tanstack/react-query'
 
 const fetchIp = async () => {
@@ -6,20 +7,21 @@ const fetchIp = async () => {
   return data
 }
 
-interface Ip {
-  ip: string
-  city: string
-  region: string
-  country: string
-  loc: string
-  org: string
-  postal: string
-  timezone: string
+const fetchViews = async () => {
+  const ip = await fetchIp()
+  const ipdata = ip.data
+  console.log(ipdata)
+
+  const data = await ApiViews.get('')
+  const views: Views = data.data
+
+  const pagination: Pagination = views.meta.pagination
+  return pagination
 }
 
-export const useFetchIp = () => {
-  return useQuery<Ip>({
-    queryKey: ['ip'],
-    queryFn: fetchIp
+export const useFetchViews = () => {
+  return useQuery<Pagination>({
+    queryKey: ['views'],
+    queryFn: fetchViews
   })
 }
