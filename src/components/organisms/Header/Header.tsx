@@ -1,11 +1,16 @@
+import { Settings } from '@/components/atoms/Settings/Settings'
+import { Views } from '@/components/atoms/Views/Views'
 import { NavBar } from '@/components/molecules/NavBar/NavBar'
+import './Header.scss'
+import { Menu } from '@/components/atoms/Menu/Menu'
 
 export const Header = () => {
   return (
-    <header>
-      <div></div>
+    <header className='header px'>
+      <Menu/>
+      <Views/>
       <NavBar/>
-      <div></div>
+      <Settings/>
     </header>
   )
 }

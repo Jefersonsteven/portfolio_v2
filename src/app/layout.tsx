@@ -3,6 +3,7 @@ import 'normalize.css'
 import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
 import React from 'react'
+import { ReactQueryProvider } from '@/providers/ReactQueryProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat({ subsets: ['latin'] })
@@ -18,9 +19,11 @@ interface Props {
 
 const RootLayout: React.FC<Props> = ({ children }) => {
   return (
-    <html lang="es" className={montserrat.className}>
-      <body className={inter.className}>{children}</body>
-    </html>
+    <ReactQueryProvider>
+      <html lang="es" className={montserrat.className}>
+        <body className={inter.className}>{children}</body>
+      </html>
+    </ReactQueryProvider>
   )
 }
 

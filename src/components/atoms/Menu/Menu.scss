@@ -1,0 +1,9 @@
+.menu {
+  cursor: pointer;
+}
+
+@media (width > 900px) {
+  .menu {
+    display: none;
+  }
+}
