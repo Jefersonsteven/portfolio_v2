@@ -2,7 +2,7 @@
 import views from '@/data/translate/en/data.json'
 import { vendingIcons } from '@/utilities/vendingIcons'
 import './Views.scss'
-import { useFetchViews } from '@/hooks/useIp'
+import { useFetchViews } from '@/hooks/useView'
 
 export const Views = () => {
   const { data, isLoading } = useFetchViews()
@@ -10,7 +10,7 @@ export const Views = () => {
   return (
       <div className='views'>
         <div className='views views__content'>
-          <p>{(data != null) ? `${data.total}` : '🔃' }</p>
+          <p>{data !== undefined ? `${data.total}` : '🔃' }</p>
           <p>{views.header.views}</p>
         </div>
         <div className={isLoading ? 'rotate' : ''}>
