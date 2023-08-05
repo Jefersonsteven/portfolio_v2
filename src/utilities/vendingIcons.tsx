@@ -44,6 +44,18 @@ export const vendingIcons = (nameIcon: string, size: number) => {
     case 'CV':
       return <Icon width={size} icon="ph:file-pdf-duotone" />
 
+    case 'play-back':
+      return <Icon width={size} icon="ion:play-back" />
+
+    case 'play-forward':
+      return <Icon width={size} icon="ion:play-forward" />
+
+    case 'play':
+      return <Icon width={size} icon="ion:play" />
+
+    case 'pause':
+      return <Icon width={size} icon="ion:pause" />
+
     case 'en':
       return <p className='center' style={{ width: `${size}px`, height: `${size}px`, fontWeight: 'bold' }}>EN</p>
 
