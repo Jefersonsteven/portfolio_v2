@@ -35,10 +35,10 @@ export const vendingIcons = (nameIcon: string, size: number) => {
     case 'instagram':
       return <Icon width={size} icon="ri:instagram-line" />
 
-    case 'theme dark':
+    case 'dark':
       return <Icon width={size} icon="akar-icons:moon" />
 
-    case 'theme light':
+    case 'light':
       return <Icon width={size} icon="akar-icons:sun" />
 
     case 'CV':

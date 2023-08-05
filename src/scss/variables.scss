@@ -1,2 +1,11 @@
-$primary-color: #171717;
-$text-color: #ededed;
+:root, html[data-theme='dark'] {
+  --background-color: #171717;
+  --text-color: #ededed ;
+  --shadow: rgba(0, 0, 0, 0.25);
+}
+
+html[data-theme='light'] {
+  --background-color: #ededed;
+  --text-color: #171717 ;
+  --shadow: rgba(217, 217, 217, 0.51);
+}

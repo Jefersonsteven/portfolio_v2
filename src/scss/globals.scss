@@ -9,8 +9,8 @@
 body {
   width: 100vw;
   height: 100%;
-  background: $primary-color;
-  color: $text-color;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 ul {
@@ -21,7 +21,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: $text-color
+  color: var(--text-color)
 }
 
 .flex-center {

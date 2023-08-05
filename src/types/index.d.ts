@@ -10,6 +10,10 @@ export interface LanguageStore {
   language: language
   setLanguage: (language: es) => void
 }
+export interface ThemeStore {
+  theme: string
+  setTheme: (theme: string) => void
+}
 
 export interface Ip {
   ip: string
