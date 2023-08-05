@@ -1,0 +1,21 @@
+.settings {
+  cursor: pointer;
+}
+
+
+.settings--hover:hover {
+  & svg {
+    animation: rotate 3s ease-in-out infinite;
+  }
+}
+
+@media (width >= 1130px) {
+  .settings {
+    min-width: 63px;
+    height: 63px;
+    background-color: var(--b-opposite);
+    color: var(--t-opposite);
+    border-radius: 16px;
+    cursor: pointer;
+  }
+}

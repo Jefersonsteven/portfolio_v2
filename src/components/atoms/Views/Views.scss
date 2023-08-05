@@ -16,3 +16,14 @@
     transform: rotate(360deg);
   }
 }
+
+@media (width >= 1130px) {
+  .views {
+    align-items: flex-end;
+    gap: 8px;
+  }
+  .views__content {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

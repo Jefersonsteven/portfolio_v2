@@ -6,7 +6,7 @@ import { Menu } from '@/components/atoms/Menu/Menu'
 
 export const Header = () => {
   return (
-    <header className='header px'>
+    <header className='header'>
       <Menu/>
       <Views/>
       <NavBar/>

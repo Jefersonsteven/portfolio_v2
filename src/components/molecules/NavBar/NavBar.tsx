@@ -47,11 +47,12 @@ export const NavBar = () => {
   }
 
   return (
-      <nav ref={nav} className="navbar open">
+      <nav ref={nav} className="open navbar__container">
+        <div className='navbar'>
         <ul className="navbar__list flex">
           {
             language.header.navigation.map(option => (
-              <li onClick={handleClick} key={option.href} className="navbar__option center">
+              <li onClick={handleClick} key={option.href} className="navbar__option navbar__option--hover center">
                 <Link href={option.href}>
                   <Icon size={30} name={option.href}/>
                 </Link>
@@ -62,7 +63,7 @@ export const NavBar = () => {
         <ul className="navbar__list flex">
           {
             language.header.social_media.map(social => (
-              <li onClick={handleClick} key={social.href} className="navbar__option center">
+              <li onClick={handleClick} key={social.href} className="navbar__option navbar__option--hover center">
                 <Link href={social.href} target='__blank'>
                   <Icon size={30} name={social.title}/>
                 </Link>
@@ -71,16 +72,17 @@ export const NavBar = () => {
           }
         </ul>
         <ul className="navbar__list flex">
-            <li onClick={handleClick} className="navbar__option center">
+            <li onClick={handleClick} className="navbar__option navbar__option--hover center">
               <Icon size={30} name={language.language}/>
             </li>
             <li onClick={(event) => {
               handleClick(event)
               handleToggleTheme()
-            }} className="navbar__option center">
+            }} className="navbar__option navbar__option--hover center">
               <Icon size={30} name={theme}/>
             </li>
         </ul>
+        </div>
       </nav>
   )
 }
