@@ -10,7 +10,7 @@ export const Views = () => {
   return (
       <div className='views'>
         <div className='views views__content'>
-          <p>{data !== undefined ? `${data.total}` : '🔃' }</p>
+          <p>{data !== undefined ? `${data}` : '🔃' }</p>
           <p>{views.header.views}</p>
         </div>
         <div className={isLoading ? 'rotate' : ''}>

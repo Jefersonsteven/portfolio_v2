@@ -15,8 +15,7 @@ const fetchViews = async () => {
       const ip = await fetchIp()
       const data = await ApiViews.post('', {
         data: {
-          ...ip,
-          date: new Date()
+          ...ip
         }
       })
 
@@ -24,10 +23,9 @@ const fetchViews = async () => {
     }
 
     const data = await ApiViews.get<Views>('')
-    const views = data.data
+    const views = data.data.length
 
-    const pagination = views.meta.pagination
-    return pagination
+    return views
   } catch (error) {
     console.log(error)
   }

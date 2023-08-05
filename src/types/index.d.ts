@@ -14,35 +14,8 @@ export interface Ip {
   timezone: string
 }
 
-interface ViewDataAttributes {
-  ip: string
-  city: string
-  region: string
-  country: string
-  loc: string
-  timezone: string
-  date: string
-  createdAt: string
-  updatedAt: string
-  publishedAt: string
+export interface View extends Ip {
+  id: string
 }
 
-interface Meta {
-  pagination: Pagination
-}
-
-export interface Pagination {
-  page: number
-  pageSize: number
-  pageCount: number
-  total: number
-}
-
-interface ViewData {
-  id: number
-  attributes: ViewDataAttributes
-}
-export interface Views {
-  data: ViewData
-  meta: Meta
-}
+export type Views = View[]

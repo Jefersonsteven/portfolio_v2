@@ -8,5 +8,5 @@ export const ApiIp = axios.create({
 })
 
 export const ApiViews = axios.create({
-  baseURL: 'http://localhost:1337/api/views'
+  baseURL: '/api/views'
 })
