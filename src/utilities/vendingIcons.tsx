@@ -41,11 +41,14 @@ export const vendingIcons = (nameIcon: string, size: number) => {
     case 'theme light':
       return <Icon width={size} icon="akar-icons:sun" />
 
+    case 'CV':
+      return <Icon width={size} icon="ph:file-pdf-duotone" />
+
     case 'en':
       return <p className='center' style={{ width: `${size}px`, height: `${size}px`, fontWeight: 'bold' }}>EN</p>
 
-    case 'sp':
-      return <p className='center' style={{ width: `${size}px`, height: `${size}px`, fontWeight: 'bold' } }>SP</p>
+    case 'es':
+      return <p className='center' style={{ width: `${size}px`, height: `${size}px`, fontWeight: 'bold' } }>ES</p>
 
     default:
       return <Icon width={size} icon="ic:outline-disabled-by-default" />

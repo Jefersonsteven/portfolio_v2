@@ -1,6 +1,14 @@
+import type en from '@/data/translate/en/data.json'
 export interface MenuStore {
   menu: HTMLElement | null
   setMenu: (element: HTMLElement) => void
+}
+
+export type language = typeof en
+
+export interface LanguageStore {
+  language: language
+  setLanguage: (language: es) => void
 }
 
 export interface Ip {

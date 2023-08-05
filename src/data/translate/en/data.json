@@ -1,4 +1,5 @@
 {
+  "language": "en",
   "header": {
     "views": "Views",
     "navigation": [
@@ -35,6 +36,10 @@
       {
         "title": "github",
         "href": "https://github.com/Jefersonsteven"
+      },
+      {
+        "title": "CV",
+        "href": "/CV-Jefferson-Steven-English.pdf"
       }
     ]
   },
