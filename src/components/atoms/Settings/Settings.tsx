@@ -17,7 +17,7 @@ export const Settings = () => {
       <Player hidden={open}/>
       <div
       onClick={handleClick}
-        className='settings center settings--hover'
+        className='settings center settings--hover pointer'
       >
         <Icon name="settings" size={30}/>
       </div>

@@ -1,8 +1,8 @@
 import { type language, type LanguageStore } from '@/types'
 import { create } from 'zustand'
-import en from '@/data/translate/en/data.json'
+import es from '@/data/translate/es/data.json'
 
 export const useLanguageStore = create<LanguageStore>((set) => ({
-  language: en,
+  language: es,
   setLanguage: (language: language) => { set(() => ({ language })) }
 }))

@@ -56,6 +56,12 @@ export const vendingIcons = (nameIcon: string, size: number) => {
     case 'pause':
       return <Icon width={size} icon="ion:pause" />
 
+    case 'mouse':
+      return <Icon width={size} icon="clarity:mouse-solid" />
+
+    case 'arrow':
+      return <Icon width={size} icon="bxs:up-arrow" />
+
     case 'en':
       return <p className='center' style={{ width: `${size}px`, height: `${size}px`, fontWeight: 'bold' }}>EN</p>
 

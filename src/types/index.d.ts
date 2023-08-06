@@ -4,6 +4,13 @@ export interface MenuStore {
   setMenu: (element: HTMLElement) => void
 }
 
+export interface Coordinates {
+  coordinates: {
+    x: number
+    y: number
+  }
+}
+
 export type language = typeof en
 
 export interface LanguageStore {

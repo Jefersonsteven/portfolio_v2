@@ -7,6 +7,7 @@
 }
 
 .navbar__container {
+  background-color: var(--background-color);
   display: flex;
   position: absolute;
   align-items: center;
@@ -28,17 +29,16 @@
   }
 }
 
-@mixin box {
+@mixin box($background) {
   border-radius: 11px;
-  background: var(--background-color);
+  background: var($background);
   box-shadow: 9px 13px 9px -3px var(--shadow) inset;
 }
 
 .navbar__option {
   width: 70px;
   height: 70px;
-  cursor: pointer;
-  @include box
+  @include box(--background-color)
 }
 
 .open {
@@ -62,10 +62,12 @@
   .navbar {
     width: 900px;
     padding: 20px;
-    @include box
+    @include box(--background-navbar);
+    backdrop-filter: blur(17.5px);
   }
 
   .navbar__container {
+    background-color: transparent;
     position: relative;
     justify-content: center;
     margin-top: 0;

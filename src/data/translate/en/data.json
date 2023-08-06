@@ -39,13 +39,13 @@
       },
       {
         "title": "CV",
-        "href": "/CV-Jefferson-Steven-English.pdf"
+        "href": "/assets/CV-Jefferson-Steven-English.pdf"
       }
     ]
   },
   "home": {
     "name": "Jeffer Steven Núñez",
-    "rol": "Front End | Fullstack Developer"
+    "rol": ["Front End", "Fullstack Developer"]
   },
   "about_me": {
     "title": "About me",

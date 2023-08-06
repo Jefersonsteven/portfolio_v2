@@ -1,5 +1,6 @@
 :root, html[data-theme='dark'] {
   --background-color: #171717;
+  --background-navbar: #1717174b;
   --text-color: #ededed ;
   --shadow: rgba(0, 0, 0, 0.25);
   --b-opposite: #ededed;
@@ -9,6 +10,7 @@
 
 html[data-theme='light'] {
   --background-color: #ededed;
+  --background-navbar: #ededed4d;
   --text-color: #171717 ;
   --shadow: rgba(217, 217, 217, 0.51);
   --b-opposite: #171717;

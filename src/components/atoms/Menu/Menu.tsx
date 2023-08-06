@@ -14,7 +14,7 @@ export const Menu = () => {
   }
 
   return (
-    <div className='menu' onClick={handleClick}>
+    <div className='menu pointer' onClick={handleClick}>
       <Icon name='menu' size={30}/>
     </div>
   )

@@ -72,13 +72,13 @@ export const NavBar = () => {
           }
         </ul>
         <ul className="navbar__list flex">
-            <li onClick={handleClick} className="navbar__option navbar__option--hover center">
+            <li onClick={handleClick} className="navbar__option navbar__option--hover center pointer">
               <Icon size={30} name={language.language}/>
             </li>
             <li onClick={(event) => {
               handleClick(event)
               handleToggleTheme()
-            }} className="navbar__option navbar__option--hover center">
+            }} className="navbar__option navbar__option--hover center pointer">
               <Icon size={30} name={theme}/>
             </li>
         </ul>
