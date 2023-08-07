@@ -47,7 +47,10 @@ export const Player: React.FC<Props> = ({ hidden }) => {
   }
 
   return (
-    <div className='player' style={{ transform: hidden ? 'translateY(-200px)' : 'translateY(0px)' }}>
+    <div
+      className='player'
+      style={{ transform: hidden ? 'translateY(-200px)' : 'translateY(0px)' }}
+    >
       <audio
         style={{ display: 'none' }}
         ref={reproductor}

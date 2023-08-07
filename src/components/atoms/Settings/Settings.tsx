@@ -13,14 +13,14 @@ export const Settings = () => {
   }
 
   return (
-    <>
+    <div className='settings'>
       <Player hidden={open}/>
       <div
       onClick={handleClick}
-        className='settings center settings--hover pointer'
+        className='settings__btn center settings__btn--hover pointer'
       >
         <Icon name="settings" size={30}/>
       </div>
-    </>
+    </div>
   )
 }

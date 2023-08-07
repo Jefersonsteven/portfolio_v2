@@ -1,5 +1,4 @@
 .header {
-  position: absolute;
   padding: 0 30px;
   padding-top: 30px;
   margin-bottom: 20px;
@@ -18,5 +17,7 @@
     padding-top: 0;
     height: 93px;
     max-width: 1512px;
+    position: fixed;
+    top: 0;
   }
 }

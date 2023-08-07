@@ -3,10 +3,10 @@
   gap: 10px;
   position: absolute;
   background-color: var(--b-opposite);
-  right: 30px;
+  right: 0px;
   padding: 10px;
   border-radius: 16px;
-  bottom: -50px;
+  top: 50px;
   & .btn {
     border: none;
     background: transparent;
@@ -14,5 +14,11 @@
   } 
   & .btn--hover:hover {
     color: var(--red);
+  }
+}
+
+@media (width >= 1130px) {
+  .player {
+    top: 80px;
   }
 }

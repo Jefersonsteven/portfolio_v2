@@ -13,7 +13,7 @@
       },
       {
         "title": "tech and tools",
-        "href": "/#techandtools"
+        "href": "/#techsandtools"
       },
       {
         "title": "projects",
@@ -95,6 +95,7 @@
       "nodejs",
       "express",
       "sequelize",
+      "prisma",
       "postgresql",
       "insomnia",
       "firebase",

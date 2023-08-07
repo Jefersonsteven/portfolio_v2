@@ -1,11 +1,14 @@
-.settings--hover:hover {
-  & svg {
-    animation: rotate 3s ease-in-out infinite;
+.settings {
+  position: relative;
+  &__btn--hover:hover {
+    & svg {
+      animation: rotate 3s ease-in-out infinite;
+    }
   }
 }
 
 @media (width >= 1130px) {
-  .settings {
+  .settings__btn {
     min-width: 63px;
     height: 63px;
     background-color: var(--b-opposite);

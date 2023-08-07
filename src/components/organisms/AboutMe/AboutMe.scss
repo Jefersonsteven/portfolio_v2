@@ -1,0 +1,51 @@
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutme {
+  @include flex-col;
+  &__content,
+  &__perfil,
+  &__info,
+  &__tags,
+  &__description {
+    @include flex-col;
+  }
+  &__info {
+    gap: 40px;
+  }
+  &__photo {
+    width: calc(100vw - 80%);
+    height: auto;
+    border-radius: 16px;
+  }
+  &__tag {
+    background-color: var(--grey);
+    width: max-content;
+    padding: 10px;
+    border-radius: 8px;
+    color: whitesmoke;
+  }
+  &__certificates {
+    display: flex;
+    gap: 8px;
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+}
+
+@media (width >= 1130px) {
+  .aboutme {
+    max-width: 1512px;
+    &__content {
+      flex-direction: row;
+    }
+    &__description {
+      max-width: 850px;
+    }
+    &__photo {
+      width: 345px;
+    }
+  }
+}
