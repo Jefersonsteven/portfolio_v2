@@ -16,12 +16,12 @@ export const Home = () => {
         </h1>
       </div>
       <div className='home__mouse'>
-        <Link href={'#aboutme'}>
+        <Link href={'#aboutme'} aria-label='about me'>
           <Icon size={30} name='mouse'/>
         </Link>
       </div>
-      <div className='home__arrow'>
-        <Link href={'#aboutme'}>
+      <div className='home__arrow' >
+        <Link href={'#aboutme'} aria-label='about me'>
           <Icon size={30} name='arrow'/>
         </Link>
       </div>

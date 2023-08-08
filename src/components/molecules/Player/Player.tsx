@@ -57,13 +57,23 @@ export const Player: React.FC<Props> = ({ hidden }) => {
         src={songs[song]}
         controls={true}
       />
-      <button className='btn btn--hover pointer' onClick={handleBack}>
+      <button
+        aria-label='back song'
+        className='btn btn--hover pointer'
+        onClick={handleBack}
+      >
         <Icon size={20} name='play-back'/>
       </button>
-      <button className='btn btn--hover pointer' onClick={handlePlay}>
+      <button
+        aria-label='play or pause'
+        className='btn btn--hover pointer'
+        onClick={handlePlay}>
         <Icon size={20} name={play ? 'pause' : 'play'}/>
       </button>
-      <button className='btn btn--hover pointer' onClick={handleForward}>
+      <button
+        aria-label='forward song'
+        className='btn btn--hover pointer'
+        onClick={handleForward}>
         <Icon size={20} name='play-forward'/>
       </button>
     </div>

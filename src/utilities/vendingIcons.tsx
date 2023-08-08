@@ -112,7 +112,7 @@ export const vendingIcons = (nameIcon: string, size: number) => {
     case 'redux':
       return <Icon width={size} icon="skill-icons:redux" />
 
-    case 'express':
+    case 'expressjs':
       return <Icon width={size} icon="skill-icons:expressjs-dark" />
 
     case 'postgresql':
@@ -186,6 +186,12 @@ export const vendingIcons = (nameIcon: string, size: number) => {
 
     case 'photoshop':
       return <Icon width={size} icon="skill-icons:photoshop" />
+
+    case 'cloudinary':
+      return <Icon width={size} icon="logos:cloudinary-icon" />
+
+    case 'mongodb':
+      return <Icon width={size} icon="skill-icons:mongodb" />
 
     default:
       return <Icon width={size} icon="ic:outline-disabled-by-default" />

@@ -16,6 +16,7 @@ export const AboutMe = () => {
       <div className='aboutme__content small-gap'>
         <div className='aboutme__perfil small-gap'>
           <Image
+            priority={true}
             width={168}
             height={168}
             src='/assets/images/Me.png'
@@ -43,7 +44,7 @@ export const AboutMe = () => {
             </p>
             ))}
           </article>
-          <Link className='aboutme__certificates paragraph' href='/certificates'>
+          <Link className='aboutme__certificates paragraph' href='/'>
             <b>{language.about_me.certificates}</b>
             <p>...</p>
           </Link>

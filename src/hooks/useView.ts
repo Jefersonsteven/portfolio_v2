@@ -23,7 +23,7 @@ const fetchViews = async () => {
     }
 
     const data = await ApiViews.get<Views>('')
-    const views = data.data.length
+    const views = data.data
 
     return views
   } catch (error) {

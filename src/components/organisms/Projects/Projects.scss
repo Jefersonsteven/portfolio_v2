@@ -1,0 +1,24 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  &__content {
+    @extend .projects;
+  }
+  &__project {
+    padding: 20px;
+    border-radius: 1.6rem;
+    border: 1px solid var(--red);
+    max-width: 644px;
+  }
+}
+
+
+@media (width >= 1130px) {
+  .projects {
+    max-width: 1512px;
+    &__content { 
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

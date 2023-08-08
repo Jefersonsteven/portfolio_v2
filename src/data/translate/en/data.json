@@ -118,7 +118,7 @@
         "id": "p1",
         "team": false,
         "title": "Pokedex",
-        "gif": "/assets/gifs/pokemon.gif",
+        "gif": "/assets/gifs/pokemon.mp4",
         "tech_stack": [
           "redux",
           "react",
@@ -168,7 +168,7 @@
         "id": "p2",
         "team": true,
         "title": "Tools Match",
-        "gif": "/assets/gifs/toolsmatch.gif",
+        "gif": "/assets/gifs/toolsmatch.mp4",
         "tech_stack": [
           "nextjs",
           "react",
@@ -219,7 +219,7 @@
         "id": "p3",
         "team": true,
         "title": "Uva",
-        "gif": "/assets/gifs/uva.gif",
+        "gif": "/assets/gifs/uva.mp4",
         "tech_stack": [
           "redux",
           "react",

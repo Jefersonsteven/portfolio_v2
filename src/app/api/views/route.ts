@@ -4,7 +4,8 @@ import { NextResponse } from 'next/server'
 export async function GET (request: Request) {
   try {
     const views = await prisma.view.findMany()
-    return NextResponse.json(views)
+
+    return NextResponse.json(views.length)
   } catch (error) {
     if (error instanceof Error) {
       return NextResponse.json(
@@ -26,7 +27,9 @@ export async function POST (request: Request) {
     const newView = await prisma.view.create({
       data: body.data
     })
-    return NextResponse.json(newView)
+    return NextResponse.json({
+      message: `view id: ${newView.id}`
+    })
   } catch (error) {
     if (error instanceof Error) {
       return NextResponse.json(

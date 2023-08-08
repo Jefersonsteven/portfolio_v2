@@ -1,0 +1,19 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  &__video {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+  &__content {
+    @extend .project-card;
+  }
+  &__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
