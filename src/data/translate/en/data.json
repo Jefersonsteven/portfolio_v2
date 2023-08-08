@@ -118,7 +118,7 @@
         "id": "p1",
         "team": false,
         "title": "Pokedex",
-        "gif": "/",
+        "gif": "/assets/gifs/pokemon.gif",
         "tech_stack": [
           "redux",
           "react",
@@ -168,7 +168,7 @@
         "id": "p2",
         "team": true,
         "title": "Tools Match",
-        "gif": "/",
+        "gif": "/assets/gifs/toolsmatch.gif",
         "tech_stack": [
           "nextjs",
           "react",
@@ -219,7 +219,7 @@
         "id": "p3",
         "team": true,
         "title": "Uva",
-        "gif": "/",
+        "gif": "/assets/gifs/uva.gif",
         "tech_stack": [
           "redux",
           "react",
@@ -284,7 +284,7 @@
           ]
         },
         "web": "https://uva-to1s.onrender.com/",
-        "github": ""
+        "github": "https://github.com/No-Country/c12-14-ft-node-react"
       }
     ]
   },
@@ -293,7 +293,7 @@
     "data": [
       {
         "id": "mp1",
-        "gif": "/",
+        "gif": "/assets/images/geometric-figures.png",
         "title": "Calculate Geometric",
         "web": "http://jeffersondev.eso.soy.s3-website.us-east-2.amazonaws.com/",
         "github": "https://github.com/Jefersonsteven/math-aplication-JS-FG",
@@ -301,7 +301,7 @@
       },
       {
         "id": "mp2",
-        "gif": "/",
+        "gif": "/assets/images/advice-generator-app.png",
         "title": "Advice generator app",
         "web": "https://advice-generator-app-jeffer.netlify.app/",
         "github": "https://github.com/Jefersonsteven/Advice-Generator-App",
@@ -309,7 +309,7 @@
       },
       {
         "id": "mp3",
-        "gif": "/",
+        "gif": "/assets/images/eco-store-landing.png",
         "title": "Eco Store",
         "web": "https://eco-store-jeffer.netlify.app/",
         "github": "https://github.com/Jefersonsteven/eco-store-platzi",
@@ -317,7 +317,7 @@
       },
       {
         "id": "mp4",
-        "gif": "/",
+        "gif": "/assets/images/clock-app.png",
         "title": "Clock App",
         "web": "https://clock-app-hazel.vercel.app/",
         "github": "https://github.com/Jefersonsteven/clock-app",
@@ -325,7 +325,7 @@
       },
       {
         "id": "mp5",
-        "gif": "/",
+        "gif": "/assets/images/entertainment-web-app.png",
         "title": "Entertaiment Web App",
         "web": "https://entertainment-web-app-jeffer-24c083.netlify.app/",
         "github": "https://github.com/Jefersonsteven/entertainment-web-app",
@@ -333,7 +333,7 @@
       },
       {
         "id": "mp6",
-        "gif": "/",
+        "gif": "/assets/images/calculator-app.png",
         "title": "Calculator App",
         "web": "https://calculator-ts-jeffer.netlify.app/",
         "github": "https://github.com/Jefersonsteven/calculator-typescript-app",

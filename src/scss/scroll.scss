@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 15px;
+}
+
+
+
+::-webkit-scrollbar-track {
+  background-color: var(--red);
+  border-radius: 10px;
+  margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--red-dark);
+  border-radius: 10px;
+  border: .15em solid var(--red);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--red-hover);
+}
+
+@supports (scrollbar-color: var(--red) var(--red-hover) var(--red-dark)) {
+  * {
+    scrollbar-color: var(--red-dark) var(--red);
+    scrollbar-width: thin;
+  }
+}
