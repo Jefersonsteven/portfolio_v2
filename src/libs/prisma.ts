@@ -1,5 +1,5 @@
-// /* eslint-disable no-var */
-// /* eslint-disable @typescript-eslint/strict-boolean-expressions */
+/* eslint-disable no-var */
+/* eslint-disable @typescript-eslint/strict-boolean-expressions */
 // import { PrismaClient } from '@prisma/client'
 
 // declare global {
