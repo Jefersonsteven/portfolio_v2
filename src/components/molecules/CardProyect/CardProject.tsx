@@ -3,18 +3,24 @@ import { type language } from '@/types'
 import './CardProject.scss'
 import React, { useId } from 'react'
 import { vendingIcons } from '@/utilities/vendingIcons'
+import { useRouter } from 'next/navigation'
 
 interface Props {
   project: language['projects']['data'][0]
 }
 
 export const CardProject: React.FC<Props> = ({ project }) => {
+  const navigation = useRouter()
+
+  function handleClick () {
+    navigation.push(`/projects/${project.id}`)
+  }
+
   return (
-    <div className='project-card'>
+    <div onClick={handleClick} className='project-card project-card--hover pointer'>
       <video
-        playsInline={true}
-        loop={true}
-        autoPlay={true}
+        autoPlay
+        loop
         className='project-card__video'
         src={project.gif}
       ></video>

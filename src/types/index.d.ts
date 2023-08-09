@@ -37,4 +37,4 @@ export interface View extends Ip {
   id: string
 }
 
-export type Views = View[]
+export type Views = number

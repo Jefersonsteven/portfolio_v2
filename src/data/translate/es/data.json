@@ -118,7 +118,7 @@
         "id": "p1",
         "team": false,
         "title": "Pokedex",
-        "gif": "/assets/gifs/pokemon.mp4",
+        "gif": "https://res.cloudinary.com/dmgv8dsgg/video/upload/v1691509370/pokemon_kitvkg.mp4",
         "tech_stack": [
           "redux",
           "react",
@@ -137,7 +137,7 @@
         },
         "rol": "Desarrollador Fullstack",
         "tasks": {
-          "title": "Tareas",
+          "title": "Tareas Realizadas",
           "data": [
             {
               "id": "t1",
@@ -161,14 +161,14 @@
             }
           ]
         },
-        "web": "",
+        "web": "https://pokemon-app-pokedex-jeffer.netlify.app/",
         "github": "https://github.com/Jefersonsteven/pokemon-app"
       },
       {
         "id": "p2",
         "team": true,
         "title": "Tools Match",
-        "gif": "/assets/gifs/toolsmatch.mp4",
+        "gif": "https://res.cloudinary.com/dmgv8dsgg/video/upload/v1691509376/toolsmatch_hxzpob.mp4",
         "tech_stack": [
           "nextjs",
           "react",
@@ -183,7 +183,7 @@
         },
         "rol": "Desarrollador Front End",
         "tasks": {
-          "title": "Tareas",
+          "title": "Tareas Realizadas",
           "data": [
             {
               "id": "t1",
@@ -219,7 +219,7 @@
         "id": "p3",
         "team": true,
         "title": "Uva",
-        "gif": "/assets/gifs/uva.mp4",
+        "gif": "https://res.cloudinary.com/dmgv8dsgg/video/upload/v1691509374/uva_zgthiq.mp4",
         "tech_stack": [
           "redux",
           "react",
@@ -239,7 +239,7 @@
         },
         "rol": "Desarrollador Front End",
         "tasks": {
-          "title": "Tareas",
+          "title": "Tareas Realizadas",
           "data": [
             {
               "id": "t1",
@@ -257,34 +257,34 @@
               "content": "Desarrollar la barra de navegación principal, que permitió una navegación fluida entre las diferentes secciones del sitio."
             },
             {
-              "id": "t3",
+              "id": "t4",
               "title": "Vista del perfil del usuario",
               "content": "Creación de una página donde los usuarios pueden ver y actualizar su información personal, como nombre, foto y tecnologías en las que trabajan."
             },
             {
-              "id": "t4",
+              "id": "t5",
               "title": "Implementación de la aplicación web en vercel",
               "content": "Implementación del lanzamiento de la aplicación web en vercel y servidor 'render.com'."
             },
             {
-              "id": "t5",
+              "id": "t6",
               "title": "Modales de edición",
               "content": "Implementé pequeños modales que permiten a los usuarios editar su foto, información personal, conjunto de tecnologías y descripción del perfil."
             },
             {
-              "id": "t6",
+              "id": "t7",
               "title": "Vista de 'Sobre nosotros'",
               "content": "Desarrollé la página que muestra la información de los creadores de la aplicación web. Esta sección incluye una breve explicación sobre el grupo de desarrolladores y sus objetivos, permitiendo a los usuarios conocer más sobre quiénes están detrás del proyecto."
             },
             {
-              "id": "t7",
+              "id": "t8",
               "title": "Funcionalidad de coincidencia y cifrado de contraseñas con JWT",
               "content": "Utilicé Tokens Web JSON (JWT) para cifrar y descifrar las contraseñas en los formularios de inicio de sesión y registro. JWT proporcionó una capa adicional de seguridad y permitió una autenticación sólida entre el cliente y el servidor."
             }
           ]
         },
         "web": "https://uva-to1s.onrender.com/",
-        "github": ""
+        "github": "https://github.com/No-Country/c12-14-ft-node-react"
       }
     ]
   },

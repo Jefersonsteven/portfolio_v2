@@ -20,6 +20,12 @@ export const vendingIcons = (nameIcon: string, size: number) => {
     case 'settings':
       return <Icon width={size} icon="fluent:settings-32-regular" />
 
+    case 'back':
+      return <Icon width={size} icon="ic:round-keyboard-backspace" />
+
+    case 'link':
+      return <Icon width={size} icon="ph:link-fill" />
+
     case 'menu':
       return <Icon width={size} icon="bi:menu-button" />
 

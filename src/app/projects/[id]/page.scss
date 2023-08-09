@@ -1,0 +1,11 @@
+.project-view {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  align-items: center;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1513px;
+  }
+}

@@ -118,7 +118,7 @@
         "id": "p1",
         "team": false,
         "title": "Pokedex",
-        "gif": "/assets/gifs/pokemon.mp4",
+        "gif": "https://res.cloudinary.com/dmgv8dsgg/video/upload/v1691509370/pokemon_kitvkg.mp4",
         "tech_stack": [
           "redux",
           "react",
@@ -137,7 +137,7 @@
         },
         "rol": "Fullstack Developer",
         "tasks": {
-          "title": "Tasks",
+          "title": "Completed tasks",
           "data": [
             {
               "id": "t1",
@@ -161,14 +161,14 @@
             }
           ]
         },
-        "web": "",
+        "web": "https://pokemon-app-pokedex-jeffer.netlify.app/",
         "github": "https://github.com/Jefersonsteven/pokemon-app"
       },
       {
         "id": "p2",
         "team": true,
         "title": "Tools Match",
-        "gif": "/assets/gifs/toolsmatch.mp4",
+        "gif": "https://res.cloudinary.com/dmgv8dsgg/video/upload/v1691509376/toolsmatch_hxzpob.mp4",
         "tech_stack": [
           "nextjs",
           "react",
@@ -183,7 +183,7 @@
         },
         "rol": "Front End Developer",
         "tasks": {
-          "title": "Tasks",
+          "title": "Completed tasks",
           "data": [
             {
               "id": "t1",
@@ -219,7 +219,7 @@
         "id": "p3",
         "team": true,
         "title": "Uva",
-        "gif": "/assets/gifs/uva.mp4",
+        "gif": "https://res.cloudinary.com/dmgv8dsgg/video/upload/v1691509374/uva_zgthiq.mp4",
         "tech_stack": [
           "redux",
           "react",
@@ -239,7 +239,7 @@
         },
         "rol": "Front End Developer",
         "tasks": {
-          "title": "Tasks",
+          "title": "Completed tasks",
           "data": [
             {
               "id": "t1",
@@ -257,27 +257,27 @@
               "content": "Develop the main navigation bar, which allowed smooth navigation between the different sections of the site."
             },
             {
-              "id": "t3",
+              "id": "t4",
               "title": "User profile view",
               "content": "Creation of a page where users can see and update their personal information, such as name, photo and technologies in which they work."
             },
             {
-              "id": "t4",
+              "id": "t5",
               "title": "Deploy web application in vercel",
               "content": "Implementation of the web application launch and 'render.com' server."
             },
             {
-              "id": "t5",
+              "id": "t6",
               "title": "Editing modals",
               "content": "I implemented small modals that allow users to edit their photo, personal information, technology stack and profile description."
             },
             {
-              "id": "t6",
+              "id": "t7",
               "title": "View of 'About us'",
               "content": "I developed the page that shows the information of the creators of the web application. This section includes a brief explanation about the developer group and its goals, allowing users to learn more about who is behind the project."
             },
             {
-              "id": "t7",
+              "id": "t8",
               "title": "Password matching and encryption functionality with JWT",
               "content": "I used JSON Web Tokens (JWT) to encrypt and decrypt the passwords in the login and registration forms. JWT provided an additional layer of security and enabled strong authentication between the client and the server."
             }

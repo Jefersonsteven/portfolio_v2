@@ -13,13 +13,13 @@ const fetchViews = async () => {
 
     if (visit === null) {
       const ip = await fetchIp()
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const data = await ApiViews.post('', {
         data: {
           ...ip
         }
       })
-
-      if (data !== undefined || data !== null) localStorage.setItem('visitPortfolioJefferson', JSON.stringify(true))
+      localStorage.setItem('visitPortfolioJefferson', JSON.stringify(true))
     }
 
     const data = await ApiViews.get<Views>('')

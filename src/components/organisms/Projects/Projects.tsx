@@ -2,6 +2,7 @@
 import { useLanguageStore } from '@/store/language'
 import './Projects.scss'
 import { CardProject } from '@/components/molecules/CardProyect/CardProject'
+import Link from 'next/link'
 export const Projects = () => {
   const { language } = useLanguageStore()
   return (
@@ -16,6 +17,13 @@ export const Projects = () => {
           </div>
         )).reverse()}
       </div>
+      <Link
+        prefetch={false}
+        href={'/projects'}
+        className='projects__more'
+       >
+        <b>{language.more_projects.title} ...</b>
+      </Link>
     </section>
   )
 }
