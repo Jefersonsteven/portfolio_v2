@@ -1,4 +1,5 @@
 'use client'
+import 'animate.css'
 import '@/scss/globals.scss'
 import 'normalize.css'
 import '@/scss/variables.scss'

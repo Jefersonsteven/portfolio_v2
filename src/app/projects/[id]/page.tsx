@@ -12,7 +12,7 @@ export default function Project () {
   const project = language.projects.data.filter(project => project.id === id)[0]
 
   return (
-    <main className='project-view w-h-full px pt-view large-gap'>
+    <main className='project-view w-h-full px pt-view large-gap animate__animated animate__fadeInLeft'>
       <div className='project-view__content large-gap'>
         <BackButton/>
         <ProjectDetail project={project}/>

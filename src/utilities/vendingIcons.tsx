@@ -199,6 +199,9 @@ export const vendingIcons = (nameIcon: string, size: number) => {
     case 'mongodb':
       return <Icon width={size} icon="skill-icons:mongodb" />
 
+    case 'jwt':
+      return <Icon width={size} icon="logos:jwt-icon" />
+
     default:
       return <Icon width={size} icon="ic:outline-disabled-by-default" />
   }

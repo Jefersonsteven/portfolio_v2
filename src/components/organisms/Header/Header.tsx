@@ -6,7 +6,7 @@ import { Menu } from '@/components/atoms/Menu/Menu'
 
 export const Header = () => {
   return (
-    <header className='header'>
+    <header className='header animate__animated animate__bounceInDown'>
       <Menu/>
       <Views/>
       <NavBar/>

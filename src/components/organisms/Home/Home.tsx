@@ -8,7 +8,7 @@ export const Home = () => {
   const { language } = useLanguageStore()
   return (
     <section id="home" className="home px">
-      <div className='home__principal'>
+      <div className='home__principal animate__animated animate__fadeInLeft'>
         <h2 className="home__subtitle title">{language.home.name}</h2>
         <h1 className="home__title">
           <b className='home__rol2'>{language.home.rol[0]}</b>

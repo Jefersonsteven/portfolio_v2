@@ -6,6 +6,20 @@
   width: 100%;
 }
 
+.navbar__arial {
+  display: none;
+  position: absolute;
+  bottom: -40px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: var(--red);
+  color: white;
+  width: max-content;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+
 .navbar__container {
   background-color: var(--background-color);
   display: flex;
@@ -25,7 +39,8 @@
 
 .navbar__option--hover:hover {
   & svg, p {
-    color: var(--red);
+    color: white;
+    filter: drop-shadow(0px 0px 25px #FF4154) drop-shadow(0px 0px 11px var(--nav-hover)) drop-shadow(0px 0px 40px #DA0037) drop-shadow(0px 0px 11px rgba(255, 255, 255, 0.25)) drop-shadow(0px 0px 3px var(--nav-hover));
   }
 }
 
@@ -36,6 +51,7 @@
 }
 
 .navbar__option {
+  position: relative;
   width: 70px;
   height: 70px;
   @include box(--background-color)
@@ -82,6 +98,12 @@
   .navbar__list{
     flex-direction: row;
   }
+
+  .navbar__option--hover:hover {
+    & span {
+      display: block;
+    }
+}
 }
 
 

@@ -231,7 +231,8 @@
           "cloudinary",
           "firebase",
           "vite",
-          "mongodb"
+          "mongodb",
+          "jwt"
         ],
         "description": {
           "title": "Resumen",
@@ -345,5 +346,5 @@
     "title": "Contacto",
     "content": "Listo para enfrentar desafíos con valentía y pasión."
   },
-  "footer": "Diseñado en Figma y codificado en Visual Studio Code por su servidor @Jeffersonsteven. Construido con Next.js, Prisma y Sass, implementado con Vercel. Todo el texto está configurado en la fuente Inter y Montserrat."
+  "footer": ["Diseñado en Figma y codificado en Visual Studio Code por su servidor", "@Jeffersonsteven.", "Construido con Next.js, Prisma y Sass, implementado con Vercel. Todo el texto está configurado en la fuente Inter y Montserrat."]
 }

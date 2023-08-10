@@ -70,7 +70,9 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
               <p
               key={task.id}
               >
+                <code>
                 <strong>{task.title}: </strong>
+                </code>
                 {task.content}
               </p>
             ))}
@@ -84,6 +86,7 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
                prefetch={false}
                target='__blank'
                href={project.github}
+               as={undefined}
                >
                 <b>Github</b>
               </Link>
@@ -95,6 +98,7 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
               prefetch={false}
               target='__blank'
               href={project.web}
+              as={undefined}
               >
                 <b>Web</b>
             </Link>
