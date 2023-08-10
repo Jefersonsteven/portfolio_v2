@@ -20,7 +20,7 @@ export const Projects = () => {
       <Link
         prefetch={false}
         href={'/projects'}
-        className='projects__more'
+        className='projects__more paragraph'
        >
         <b>{language.more_projects.title} ...</b>
       </Link>

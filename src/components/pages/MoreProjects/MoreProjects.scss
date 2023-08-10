@@ -1,0 +1,25 @@
+.more-projects {
+  max-width: 1513px;
+  display: flex;
+  flex-direction: column;
+  &__content {
+    @extend .more-projects;
+  }
+}
+
+@media (width >= 450px) {
+  .more-projects {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (width >= 1000px) {
+  .more-projects {
+    &__content {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

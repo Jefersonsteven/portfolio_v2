@@ -1,0 +1,9 @@
+.projects-view {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: center;
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+}
