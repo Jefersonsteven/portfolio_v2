@@ -6,10 +6,29 @@
   &__video {
     width: 100%;
     height: auto;
+    z-index: 2;
+    position: relative;
+  }
+  & video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
     border-radius: 16px;
+  }
+  &__image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 16px;
+    object-fit: cover;
   }
   &__content {
     @extend .project-card;
+    z-index: 2;
   }
   &__technologies {
     display: flex;

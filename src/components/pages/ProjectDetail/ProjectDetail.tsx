@@ -26,12 +26,14 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
         }
         </div>
 
-        <video
-          autoPlay
-          loop
-          className='project__video'
-          src={project.gif}
-        ></video>
+        <div className='project__video'>
+          <video
+            autoPlay
+            loop
+            src={project.gif}
+          ></video>
+          <img src={project.image} alt={project.title} />
+        </div>
 
         <div className='project__technologies small-gap'>
           <h3 className='subtitle'>

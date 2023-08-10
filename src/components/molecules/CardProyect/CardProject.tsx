@@ -18,12 +18,14 @@ export const CardProject: React.FC<Props> = ({ project }) => {
 
   return (
     <div onClick={handleClick} className='project-card project-card--hover pointer'>
+      <div className='project-card__video'>
       <video
         autoPlay
         loop
-        className='project-card__video'
         src={project.gif}
       ></video>
+      <img className='project-card__image' src={project.image} alt={project.title} />
+      </div>
       <div className='project-card__content project-card__content--hover'>
         <h3 className='project-card__title'>{project.title}</h3>
         <div className='project-card__technologies'>

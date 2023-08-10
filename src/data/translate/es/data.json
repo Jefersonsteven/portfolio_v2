@@ -119,6 +119,7 @@
         "team": false,
         "title": "Pokedex",
         "gif": "https://res.cloudinary.com/dmgv8dsgg/video/upload/v1691509370/pokemon_kitvkg.mp4",
+        "image": "/assets/images/pokemon-app.png",
         "tech_stack": [
           "redux",
           "react",
@@ -169,6 +170,7 @@
         "team": true,
         "title": "Tools Match",
         "gif": "https://res.cloudinary.com/dmgv8dsgg/video/upload/v1691509376/toolsmatch_hxzpob.mp4",
+        "image": "/assets/images/tools-match-app.png",
         "tech_stack": [
           "nextjs",
           "react",
@@ -220,6 +222,7 @@
         "team": true,
         "title": "Uva",
         "gif": "https://res.cloudinary.com/dmgv8dsgg/video/upload/v1691509374/uva_zgthiq.mp4",
+        "image": "/assets/images/uva-app.png",
         "tech_stack": [
           "redux",
           "react",
