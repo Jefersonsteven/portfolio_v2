@@ -27,6 +27,7 @@ const fetchViews = async () => {
 
     return views
   } catch (error) {
+    localStorage.setItem('visitPortfolioJefferson', JSON.stringify(true))
     console.log(error)
   }
 }
