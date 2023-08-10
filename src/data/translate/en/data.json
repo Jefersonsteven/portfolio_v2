@@ -93,7 +93,7 @@
       "npm",
       "babel",
       "nodejs",
-      "express",
+      "expressjs",
       "sequelize",
       "prisma",
       "postgresql",
@@ -345,5 +345,5 @@
     "title": "Contact",
     "content": "Ready to face challenges with bravery and passion."
   },
-  "footer": "Designed in Figma and coded in Visual Studio Code by yours truly @Jeffersonsteven. Built with Next.js, Strapi and Sass, implemented with Vercel. All text is set in the Inter and Montserrat font."
+  "footer": "Designed in Figma and coded in Visual Studio Code by yours truly @Jeffersonsteven. Built with Next.js, Prisma and Sass, implemented with Vercel. All text is set in the Inter and Montserrat font."
 }
