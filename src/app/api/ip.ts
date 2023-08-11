@@ -10,3 +10,7 @@ export const ApiIp = axios.create({
 export const ApiViews = axios.create({
   baseURL: '/api/views'
 })
+
+export const ApiCertificates = axios.create({
+  baseURL: '/api/certificates'
+})

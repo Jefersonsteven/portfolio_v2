@@ -44,7 +44,7 @@ export const AboutMe = () => {
             </p>
             ))}
           </article>
-          <Link className='aboutme__certificates paragraph' href='/'>
+          <Link className='aboutme__certificates paragraph' href='/certificates'>
             <b>{language.about_me.certificates}</b>
             <p>...</p>
           </Link>

@@ -1,0 +1,17 @@
+.table {
+  border: 1px solid var(--text-color);
+  & td {
+    padding: 10px;
+    @extend .table;
+  }
+  & th {
+    padding: 10px;
+    text-align: start;
+  }
+  & tbody {
+    text-transform: capitalize;
+  }
+  & thead {
+    text-transform: uppercase;
+  }
+}

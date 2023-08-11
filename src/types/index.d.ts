@@ -38,3 +38,14 @@ export interface View extends Ip {
 }
 
 export type Views = number
+
+export interface Certificate {
+  id: string
+  name: string
+  url: string
+  category: string
+  institution: string
+  date: Date
+}
+
+export type Certificates = Certificate[]
