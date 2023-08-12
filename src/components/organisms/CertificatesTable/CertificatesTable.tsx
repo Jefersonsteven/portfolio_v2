@@ -1,30 +1,16 @@
 'use client'
-import { type Certificates } from '@/types'
 import './CertificatesTable.scss'
-import { ApiCertificates } from '@/app/api/ip'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { vendingIcons } from '@/utilities/vendingIcons'
 import { useLanguageStore } from '@/store/language'
+import { Pagination } from '@/components/molecules/Pagination/Pagination'
+import { useFetchCertificates } from '@/hooks/useCertificates'
 
 export const CertificatesTable = () => {
-  const [certificates, setCertificates] = useState<Certificates | null>(null)
   const { language } = useLanguageStore()
-
-  async function fetchData () {
-    const api = await ApiCertificates.get<Certificates>('/?page=2')
-    setCertificates(api.data)
-  }
-
-  function handlePaginate () {}
-
-  function handleNavigationNext () {}
-
-  function handleNavigationBack () {}
-
-  useEffect(() => {
-    void fetchData()
-  }, [])
+  const [currentPage, setCurrentPage] = useState('1')
+  const { data, isLoading, isError } = useFetchCertificates(currentPage)
 
   return (
     <>
@@ -39,7 +25,7 @@ export const CertificatesTable = () => {
           </tr>
         </thead>
         <tbody>
-          {certificates?.certificates?.map(certificate => (
+          {data?.certificates?.map(certificate => (
             <tr key={certificate.id}>
               <td>{certificate.name}</td>
               <td>
@@ -49,39 +35,26 @@ export const CertificatesTable = () => {
               </td>
               <td>{certificate.category}</td>
               <td>{certificate.institution}</td>
-              <td>{certificate.date.toString()}</td>
+              <td>{`
+              ${new Date(certificate.date).getUTCDate()} /
+              ${new Date(certificate.date).getMonth()} /
+              ${new Date(certificate.date).getFullYear()} 
+              `}</td>
             </tr>
           ))}
         </tbody>
       </table>
+      {isLoading && <span>Loading ...</span>}
+      {isError && <span>Not found certificates ...</span>}
 
-      <div className='table__navigation'>
-        <button onClick={handleNavigationBack} className='table__button table__button--navigation'>
-          {vendingIcons('arrow-back', 20)}
-        </button>
-        {(certificates != null) &&
-          <div className='table__pagination'>
-            {certificates?.page === certificates.totalPages && certificates.page - 2 !== 0 &&
-              <button onClick={handlePaginate} className='table__button'>{certificates?.page - 2}</button>
-            }
-            {certificates?.page !== 1 &&
-              <button onClick={handlePaginate} className='table__button'>{certificates?.page - 1}</button>
-            }
-            {certificates?.page > 0 &&
-              <button onClick={handlePaginate} className='table__button table__button--current'>{certificates?.page}</button>
-            }
-            {certificates?.page < certificates.totalPages &&
-              <button onClick={handlePaginate} className='table__button'>{certificates?.page + 1}</button>
-            }
-            {certificates?.page - 1 === 0 && certificates?.page + 2 <= certificates.totalPages &&
-              <button onClick={handlePaginate} className='table__button'>{certificates?.page + 2}</button>
-            }
-          </div>
-        }
-        <button onClick={handleNavigationNext} className='table__button table__button--navigation'>
-          {vendingIcons('arrow-next', 20)}
-        </button>
-      </div>
+      {(data != null) &&
+        <Pagination
+          page={data.page}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          totalPages={data.totalPages}
+        />
+      }
     </>
   )
 }
