@@ -68,6 +68,12 @@ export const vendingIcons = (nameIcon: string, size: number) => {
     case 'arrow':
       return <Icon width={size} icon="bxs:up-arrow" />
 
+    case 'arrow-back':
+      return <Icon width={size} icon="eva:arrow-back-outline" />
+
+    case 'arrow-next':
+      return <Icon width={size} icon="eva:arrow-forward-fill" />
+
     case 'Colombia':
       return <Icon width={size} icon="twemoji:flag-colombia" />
 

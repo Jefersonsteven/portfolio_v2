@@ -69,6 +69,13 @@
     ],
     "certificates": "certificates"
   },
+  "certificates": {
+    "title": "title",
+    "link": "link",
+    "category": "category",
+    "institution": "institution",
+    "date": "date"
+  },
   "tech_and_tools": {
     "title": "Technologies and tools",
     "stack": [

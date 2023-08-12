@@ -48,4 +48,9 @@ export interface Certificate {
   date: Date
 }
 
-export type Certificates = Certificate[]
+export interface Certificates {
+  page: number
+  pageSize: number
+  totalPages: number
+  certificates: Certificate[]
+}
