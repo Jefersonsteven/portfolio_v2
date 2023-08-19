@@ -349,6 +349,14 @@
         "web": "https://calculator-ts-jeffer.netlify.app/",
         "github": "https://github.com/Jefersonsteven/calculator-typescript-app",
         "tech_stack": ["typescript", "sass", "html", "netlify"]
+      },
+      {
+        "id": "mp7",
+        "gif": "/assets/images/todo-app-tsx.png",
+        "title": "Todo App",
+        "web": "https://gleeful-tapioca-98ed6d.netlify.app/",
+        "github": "https://github.com/Jefersonsteven/todo-app-tsx",
+        "tech_stack": ["react", "typescript", "sass", "html", "vite", "netlify"]
       }
     ]
   },
