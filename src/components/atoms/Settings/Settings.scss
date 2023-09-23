@@ -1,9 +1,10 @@
 .settings {
   position: relative;
-  &__btn--hover:hover {
-    & svg {
-      animation: rotate 3s ease-in-out infinite;
-    }
+}
+
+.animation--settings {
+  & svg {
+    animation: rotate 3s ease-in-out infinite;
   }
 }
 

@@ -4,15 +4,22 @@ import { Icon } from '@/components/atoms/Icons/Icon'
 import './Home.scss'
 import Link from 'next/link'
 import { useLanguageStore } from '@/store/language'
+import { DragIconAnimate } from '@/components/atoms/DragIconAnimate/DragIconAnimate'
 
 export const Home = () => {
   const { language } = useLanguageStore()
   const [draggingElement, setDraggingElement] = useState<HTMLHeadingElement | null>(null)
   const containerRef = useRef(null)
+  const icon = useRef(null)
 
   const handleMouseDown = (e: React.MouseEvent<HTMLHeadingElement>) => {
     setDraggingElement(e.target as HTMLHeadingElement)
     e.currentTarget.style.animationName = 'none'
+
+    // destroy el icon animation
+    if (icon.current != null) {
+      (icon.current as HTMLDivElement).style.display = 'none'
+    }
   }
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -45,6 +52,9 @@ export const Home = () => {
       ref={containerRef}
     >
       <div className='home__principal animate__animated animate__fadeInLeft'>
+        <div className='home__drag-icon' ref={icon}>
+          <DragIconAnimate/>
+        </div>
         <h2
           id='home__subtitle'
           className="home__subtitle title"

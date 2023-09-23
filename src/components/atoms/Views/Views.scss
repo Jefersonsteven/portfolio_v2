@@ -5,16 +5,9 @@
 }
 
 .rotate {
-  animation: rotate 5s linear infinite;
-}
+  // quiero que la rotacion nunca pare
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  animation: rotate 3s ease-in-out infinite;
 }
 
 @media (width >= 1130px) {

@@ -5,9 +5,11 @@ import { Icon } from '@/components/atoms/Icons/Icon'
 
 interface Props {
   hidden: boolean
+  isPlaying: boolean
+  setIsPlaying: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export const Player: React.FC<Props> = ({ hidden }) => {
+export const Player: React.FC<Props> = ({ hidden, isPlaying, setIsPlaying }) => {
   const [play, setPlay] = useState(false)
   const songs = ['music/Marzz-Countless-Times.mp3', 'music/Silence.mp3']
   const [song, setSong] = useState(0)
@@ -25,8 +27,10 @@ export const Player: React.FC<Props> = ({ hidden }) => {
   function handlePlay () {
     if (reproductor.current != null) {
       if (play) {
+        setIsPlaying(false)
         reproductor.current.pause()
       } else {
+        setIsPlaying(true)
         reproductor.current.play()
           .catch((err) => { console.log(err) })
       }
