@@ -83,8 +83,9 @@
     backdrop-filter: blur(17px);
     pointer-events: painted;
   }
-
+  
   .navbar__container {
+    width: 100dvw;
     background-color: transparent;
     justify-content: center;
     margin-top: 0;
