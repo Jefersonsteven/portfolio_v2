@@ -296,6 +296,69 @@
         },
         "web": "https://uva-to1s.onrender.com/",
         "github": "https://github.com/No-Country/c12-14-ft-node-react"
+      },
+      {
+        "id": "p4",
+        "team": true,
+        "title": "Wave",
+        "gif": "https://res.cloudinary.com/dmgv8dsgg/video/upload/v1695303594/wave_fcnbiz.mp4",
+        "image": "/assets/images/wave-app.png",
+        "tech_stack": [
+          "nextjs",
+          "react",
+          "sass",
+          "typescript",
+          "api",
+          "zustand",
+          "vercel"
+        ],
+        "description": {
+          "title": "Summary",
+          "content": "Wave es una dating app que permite a los usuarios encontrar personas con intereses similares y chatear con ellos. Está diseñada para facilitar la comunicación entre los usuarios y permitirles encontrar personas con intereses similares."
+        },
+        "rol": "Front End Developer",
+        "tasks": {
+          "title": "Completed tasks",
+          "data": [
+            {
+              "id": "t1",
+              "title": "Desarrollo de la vista de la landing",
+              "content": "Diseñar y desarrollar la página de aterrizaje (landing page) del sitio web."
+            },
+            {
+              "id": "t2",
+              "title": "Desarrollo de la vista del home",
+              "content": "Crear la página principal del sitio web con su contenido y diseño."
+            },
+            {
+              "id": "t3",
+              "title": "Configuración de la navegación de la página",
+              "content": "Configurar la navegación y las rutas del sitio web para facilitar la transición entre diferentes secciones."
+            },
+            {
+              "id": "t4",
+              "title": "Desarrollo de la vista del chat y conexión de mensajes",
+              "content": "Diseñar la interfaz de usuario de la función de chat e implementar la funcionalidad de envío y recepción de mensajes."
+            },
+            {
+              "id": "t5",
+              "title": "Configuración de estilos globales y variables",
+              "content": "Establecer los estilos globales del sitio web y definir las variables necesarias para un diseño coherente."
+            },
+            {
+              "id": "t6",
+              "title": "Implementación del modo oscuro",
+              "content": "Crear y configurar la funcionalidad de modo oscuro para que los usuarios puedan cambiar el tema del sitio."
+            },
+            {
+              "id": "t7",
+              "title": "Desarrollar la vista de perfil y la vista de edición de perfil junto con sus diferentes secciones",
+              "content": "Diseñar y desarrollar la página de perfil de usuario, que incluye la capacidad de ver y editar la información del perfil, como nombre, foto y secciones personalizadas. Implementar las diferentes secciones y funcionalidades necesarias para la edición del perfil."
+            }
+          ]
+        },
+        "web": "https://front-wave.vercel.app/",
+        "github": ""
       }
     ]
   },
@@ -364,5 +427,9 @@
     "title": "Contacto",
     "content": "Listo para enfrentar desafíos con valentía y pasión."
   },
-  "footer": ["Diseñado en Figma y codificado en Visual Studio Code por su servidor", "@Jeffersonsteven.", "Construido con Next.js, Prisma y Sass, implementado con Vercel. Todo el texto está configurado en la fuente Inter y Montserrat."]
+  "footer": [
+    "Diseñado en Figma y codificado en Visual Studio Code por su servidor",
+    "@Jeffersonsteven.",
+    "Construido con Next.js, Prisma y Sass, implementado con Vercel. Todo el texto está configurado en la fuente Inter y Montserrat."
+  ]
 }

@@ -52,7 +52,7 @@ export const NavBar = () => {
         <ul className="navbar__list flex">
           {
             language.header.navigation.map(option => (
-              <li onClick={handleClick} key={option.href} className="navbar__option navbar__option--hover center">
+              <li onClick={handleClick} key={option.href} className="navbar__option navbar__option--hover center pointer">
                 <Link as={undefined} scroll={true} href={option.href} aria-label={option.title}>
                   <Icon size={30} name={option.href}/>
                 </Link>
@@ -64,7 +64,7 @@ export const NavBar = () => {
         <ul className="navbar__list flex">
           {
             language.header.social_media.map(social => (
-              <li onClick={handleClick} key={social.href} className="navbar__option navbar__option--hover center">
+              <li onClick={handleClick} key={social.href} className="navbar__option navbar__option--hover center pointer">
                 <Link as={undefined} href={social.href} target='__blank' aria-label={social.title}>
                   <Icon size={30} name={social.title}/>
                 </Link>

@@ -59,8 +59,8 @@
   letter-spacing: 0.040rem;
 }
 
-.pointer {
-  cursor: url('/assets/pointer.svg'), auto;
+.pointer:hover {
+  cursor: pointer;
 }
 
 .large-gap {

@@ -13,17 +13,17 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
     <article className='project large-gap'>
       <div className='project__preview small-gap'>
         <div className='project__title small-gap'>
-        <h2 className='title'>
-          <b>{project.title}</b>
-        </h2>
-        {project.team &&
-          <span className='project__tag'>
-            {project.description.title === 'Resumen'
-              ? 'Trabajo en equipo'
-              : 'Team Work'
-            }
-          </span>
-        }
+          <h2 className='title'>
+            <b>{project.title}</b>
+          </h2>
+          {project.team &&
+            <span className='project__tag'>
+              {project.description.title === 'Resumen'
+                ? 'Trabajo en equipo'
+                : 'Team Work'
+              }
+            </span>
+          }
         </div>
 
         <div className='project__video'>
@@ -38,17 +38,17 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
         <div className='project__technologies small-gap'>
           <h3 className='subtitle'>
             <b>
-            {project.description.title === 'Resumen' ? 'Tecnologias' : 'Tech Stack'}
+              {project.description.title === 'Resumen' ? 'Tecnologias' : 'Tech Stack'}
             </b>
           </h3>
           <div className='project__stack'>
             {project.tech_stack.map(tech => {
               const techId = useId()
               return (
-              <span key={techId} className='project__tag'>
-                <p>{tech}</p>
-                {vendingIcons(tech, 20)}
-              </span>
+                <span key={techId} className='project__tag'>
+                  <p>{tech}</p>
+                  {vendingIcons(tech, 20)}
+                </span>
               )
             })}
           </div>
@@ -58,7 +58,7 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
       <div className='project__description small-gap'>
         <p className='project__summary'>
           <b>{project.description.title}: </b>
-           {project.description.content}
+          {project.description.content}
         </p>
 
         <p><b>ROL:</b> {project.rol}</p>
@@ -70,10 +70,10 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
           <div className='project__tasks small-gap'>
             {project.tasks.data.map(task => (
               <p
-              key={task.id}
+                key={task.id}
               >
                 <code>
-                <strong>{task.title}: </strong>
+                  <strong>{task.title}: </strong>
                 </code>
                 {task.content}
               </p>
@@ -82,30 +82,34 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
         </div>
 
         <div className='project__links small-gap'>
-          <div className='project__link'>
-            <Link
-               aria-label={`Go to Github of ${project.title}`}
-               prefetch={false}
-               target='__blank'
-               href={project.github}
-               as={undefined}
-               >
+          {project.github !== '' &&
+            <div className='project__link'>
+              <Link
+                aria-label={`Go to Github of ${project.title}`}
+                prefetch={false}
+                target='__blank'
+                href={project.github}
+                as={undefined}
+              >
                 <b>Github</b>
               </Link>
-            {vendingIcons('link', 20)}
-          </div>
-          <div className='project__link'>
-            <Link
-              aria-label={`Go to Web of ${project.title}`}
-              prefetch={false}
-              target='__blank'
-              href={project.web}
-              as={undefined}
+              {vendingIcons('link', 20)}
+            </div>
+          }
+          {project.web !== '' &&
+            <div className='project__link'>
+              <Link
+                aria-label={`Go to Web of ${project.title}`}
+                prefetch={false}
+                target='__blank'
+                href={project.web}
+                as={undefined}
               >
                 <b>Web</b>
-            </Link>
-            {vendingIcons('link', 20)}
-          </div>
+              </Link>
+              {vendingIcons('link', 20)}
+            </div>
+          }
         </div>
       </div>
     </article>

@@ -23,13 +23,14 @@
 .navbar__container {
   background-color: var(--background-color);
   display: flex;
-  position: absolute;
+  position: fixed;
   align-items: center;
   top: 0;
   left: 0;
   margin-top: 86px;
   padding: 30px;
   width: 100%;
+  z-index: 3;
 }
 
 .navbar__list {
@@ -79,15 +80,16 @@
     width: 900px;
     padding: 20px;
     @include box(--background-navbar);
-    backdrop-filter: blur(17.5px);
+    backdrop-filter: blur(17px);
+    pointer-events: painted;
   }
 
   .navbar__container {
     background-color: transparent;
-    position: relative;
     justify-content: center;
     margin-top: 0;
-    padding: 0;
+    padding-top: 30px;
+    pointer-events: none;
   }
 
   .navbar__option {
@@ -107,7 +109,7 @@
 }
 
 
-@media (width >= 1250px) {
+@media (width >= 1400px) {
   .navbar {
     width: 1000px;
   }

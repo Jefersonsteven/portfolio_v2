@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react'
+import ZustandIcon from './zustandIcon'
 
 export const vendingIcons = (nameIcon: string, size: number) => {
   switch (nameIcon) {
@@ -123,6 +124,9 @@ export const vendingIcons = (nameIcon: string, size: number) => {
 
     case 'redux':
       return <Icon width={size} icon="skill-icons:redux" />
+
+    case 'zustand':
+      return <ZustandIcon/>
 
     case 'expressjs':
       return <Icon width={size} icon="skill-icons:expressjs-dark" />

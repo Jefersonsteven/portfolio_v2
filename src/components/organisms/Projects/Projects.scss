@@ -11,8 +11,13 @@
     max-width: 644px;
   }
   &__more {
+    text-transform: capitalize;
+  }
+  &__more:hover {
+    & b {
+      color: var(--b-opposite);
+    }
     text-decoration: underline;
-    text-transform: uppercase;
   }
 }
 

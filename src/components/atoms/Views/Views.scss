@@ -27,3 +27,18 @@
     align-items: flex-end;
   }
 }
+
+@media (width >= 1300px) {
+  .views {
+    font-weight: 800;
+    background-color: var(--b-opposite);
+    color: var(--t-opposite);
+    padding: 1rem;
+    border-radius: 16px;
+    align-items: center;
+  }
+  .views__content {
+    flex-direction: row;
+    align-items: center;
+  }
+}

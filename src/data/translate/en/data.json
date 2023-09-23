@@ -296,6 +296,69 @@
         },
         "web": "https://uva-to1s.onrender.com/",
         "github": "https://github.com/No-Country/c12-14-ft-node-react"
+      },
+      {
+        "id": "p4",
+        "team": true,
+        "title": "Wave",
+        "gif": "https://res.cloudinary.com/dmgv8dsgg/video/upload/v1695303594/wave_fcnbiz.mp4",
+        "image": "/assets/images/wave-app.png",
+        "tech_stack": [
+          "nextjs",
+          "react",
+          "sass",
+          "typescript",
+          "api",
+          "zustand",
+          "vercel"
+        ],
+        "description": {
+          "title": "Summary",
+          "content": "Wave is a dating app that allows users to find people with similar interests and chat with them. It is designed to facilitate communication among users and enable them to connect with like-minded individuals."
+        },
+        "rol": "Front End Developer",
+        "tasks": {
+          "title": "Completed tasks",
+          "data": [
+            {
+              "id": "t1",
+              "title": "Develop landing page view",
+              "content": "Design and develop the landing page of the website."
+            },
+            {
+              "id": "t2",
+              "title": "Develop home page view",
+              "content": "Create the main page of the website with its content and design."
+            },
+            {
+              "id": "t3",
+              "title": "Configure page navigation",
+              "content": "Set up website navigation and routes to facilitate transitions between different sections."
+            },
+            {
+              "id": "t4",
+              "title": "Develop chat view and message connectivity",
+              "content": "Design the user interface for the chat feature and implement the functionality for sending and receiving messages."
+            },
+            {
+              "id": "t5",
+              "title": "Configure global styles and variables",
+              "content": "Establish global styles for the website and define necessary variables for a consistent design."
+            },
+            {
+              "id": "t6",
+              "title": "Implement dark mode",
+              "content": "Create and configure the dark mode functionality, allowing users to switch the site's theme."
+            },
+            {
+              "id": "t7",
+              "title": "Develop user profile view and edit profile view along with their respective sections",
+              "content": "Design and develop the user profile page, including the ability to view and edit profile information such as name, photo, and custom sections. Implement the different sections and functionalities necessary for profile editing."
+            }
+          ]
+        },
+        "web": "https://front-wave.vercel.app/",
+        "github": ""
       }
     ]
   },
@@ -364,5 +427,9 @@
     "title": "Contact",
     "content": "Ready to face challenges with bravery and passion."
   },
-  "footer": ["Designed in Figma and coded in Visual Studio Code by yours truly", "@Jeffersonsteven.", "Built with Next.js, Prisma and Sass, implemented with Vercel. All text is set in the Inter and Montserrat font."]
+  "footer": [
+    "Designed in Figma and coded in Visual Studio Code by yours truly",
+    "@Jeffersonsteven.",
+    "Built with Next.js, Prisma and Sass, implemented with Vercel. All text is set in the Inter and Montserrat font."
+  ]
 }

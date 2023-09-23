@@ -30,7 +30,6 @@
   &__certificates {
     display: flex;
     gap: 8px;
-    text-decoration: underline;
     text-transform: capitalize;
   }
 }
@@ -46,6 +45,12 @@
     }
     &__photo {
       width: 345px;
+    }
+    &__certificates:hover {
+      & b {
+        color: var(--b-opposite);
+      }
+      text-decoration: underline;
     }
   }
 }

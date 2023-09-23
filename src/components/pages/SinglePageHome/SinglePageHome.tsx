@@ -1,3 +1,4 @@
+import { NavBar } from '@/components/molecules/NavBar/NavBar'
 import { AboutMe } from '@/components/organisms/AboutMe/AboutMe'
 import { Contact } from '@/components/organisms/Contact/Contact'
 import { Footer } from '@/components/organisms/Footer/Footer'
@@ -9,6 +10,7 @@ import { Technologies } from '@/components/organisms/Technologies/Technologies'
 export const SinglePageHome = () => {
   return (
     <>
+      <NavBar/>
       <Header/>
       <Home/>
       <AboutMe/>
