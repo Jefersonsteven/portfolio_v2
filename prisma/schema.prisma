@@ -29,7 +29,7 @@ model Certificate {
   date        DateTime
 }
 
-enum Category {
+enum Category { 
   design
   development
   personal_development
