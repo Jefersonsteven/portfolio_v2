@@ -3,6 +3,7 @@ import React from 'react'
 function ZustandIcon () {
   return (
     <svg
+      className='zustand-icon'
       xmlns="http://www.w3.org/2000/svg"
       width="1066.667"
       height="622.667"
