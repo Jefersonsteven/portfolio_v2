@@ -313,7 +313,7 @@
           "vercel"
         ],
         "description": {
-          "title": "Summary",
+          "title": "Resumen",
           "content": "Wave es una dating app que permite a los usuarios encontrar personas con intereses similares y chatear con ellos. Está diseñada para facilitar la comunicación entre los usuarios y permitirles encontrar personas con intereses similares."
         },
         "rol": "Front End Developer",
@@ -358,7 +358,7 @@
           ]
         },
         "web": "https://front-wave.vercel.app/",
-        "github": ""
+        "github": "https://github.com/No-Country/s10-17-ft-js-ts"
       }
     ]
   },
