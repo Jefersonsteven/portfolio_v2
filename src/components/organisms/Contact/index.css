@@ -1,0 +1,34 @@
+.contact__form,
+.contact__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  & .circles {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    & .circle-secondary {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  & .contact__title {
+    z-index: 30;
+  }
+  & .contact__form {
+    z-index: 30;
+    & .contact__inputs {
+    }
+  }
+}

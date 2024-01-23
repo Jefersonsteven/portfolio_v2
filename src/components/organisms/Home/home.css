@@ -1,0 +1,47 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: calc(100vh - 74px);
+  & main {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    z-index: 30;
+  }
+  & footer {
+    z-index: 30;
+  }
+  & figure {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    & .circle-primary {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    & .circle-secondary {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.home__scroll-for-more::before {
+  content: "Swipe for more";
+}
+
+.home__arrow-scroll {
+  transform: rotate(90deg) scale(40%);
+}
+
+@media (width > 1100px) {
+  .home__scroll-for-more::before {
+    content: "Scroll for more";
+  }
+}

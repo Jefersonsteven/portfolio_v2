@@ -1,0 +1,42 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  & .project__stack {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  & .project__media {
+    width: 100%;
+    min-height: 228px;
+    position: relative;
+    overflow: hidden;
+    & img,
+    video {
+      border-radius: 18px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    & video {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  & .project__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    & .project__description {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  & .project__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

@@ -1,24 +1,32 @@
-'use client'
-import { useLanguageStore } from '@/store/language'
-import './Footer.scss'
-import Link from 'next/link'
-// import Link from 'next/link'
+import './index.css'
+import { Socials } from '@/components/molecules/Socials/Socials'
 
 export const Footer = () => {
-  const { language } = useLanguageStore()
   return (
-    <footer className='footer px'>
-        <p className='footer__content'>
-          {language.footer[0]}
-           <Link
-            target='__blank'
-            href='https://github.com/Jefersonsteven/portfolio_v2'
-            className='footer__link footer__link--hover'
-          >
-            <strong> {language.footer[1]} </strong>
-          </Link>
-          {language.footer[2]}
-        </p>
+    <footer className="page">
+      <a title="home" href="/" className="home-action">
+        <div className="logo-container">
+          <div className="logo-animate"></div>
+        </div>
+        <img src="/assets/svgs/logo-dynamic.png" alt="Logo" className="logo" />
+      </a>
+
+      <p className="copy">
+        <span>
+          Designed in Figma and coded in Visual Studio Code by yours truly
+        </span>
+        <strong>
+          <a target="_blank" href="https://github.com/Jefersonsteven" rel="noreferrer">
+            @Jeffersonsteven.
+          </a>
+        </strong>
+        <span>
+          Built with Astro, Reactjs, Prisma and CSS, implemented with Vercel. All
+          text is set in League Spartan and Montserrat font.
+        </span>
+      </p>
+
+      <Socials />
     </footer>
   )
 }
