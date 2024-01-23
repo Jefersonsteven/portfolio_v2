@@ -4,7 +4,7 @@ import { useLanguageStore } from '@/store/language'
 import { useParams } from 'next/navigation'
 import React from 'react'
 import './page.scss'
-import { BackButton } from '@/components/atoms/BackButton/BackButton'
+import BackButton from '@/components/atoms/BackButton/BackButton'
 
 export default function Project () {
   const { id } = useParams()

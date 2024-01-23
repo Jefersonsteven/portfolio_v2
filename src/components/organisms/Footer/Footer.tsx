@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="logo-container">
           <div className="logo-animate"></div>
         </div>
-        <img src="/assets/svgs/logo-dynamic.png" alt="Logo" className="logo" />
+        <img src="/assets/images/logo-dynamic.png" alt="Logo" className="logo" />
       </a>
 
       <p className="copy">

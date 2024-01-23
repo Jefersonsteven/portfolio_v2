@@ -1,15 +1,15 @@
-import "./index.css";
+import './index.css'
 
 interface Props {
-  title: string;
-  description: string;
-  image: string;
-  video: string;
-  technologies: string[];
-  url: string;
+  title: string
+  description: string
+  image: string
+  video: string
+  technologies: string[]
+  url: string
 }
 
-export default function Card({ title, description, image, video, technologies, url} : Props) {
+export default function Card ({ title, description, image, video, technologies, url }: Props) {
   return (
     <article className="project">
       <figure className="project__media">
@@ -25,8 +25,8 @@ export default function Card({ title, description, image, video, technologies, u
         </p>
         <div className="project__stack">
           {
-            technologies.map((technology) => (
-              <span className="tag">{ technology }</span>
+            technologies.map((technology, i) => (
+              <span key={i} className="tag">{ technology }</span>
             ))
           }
         </div>

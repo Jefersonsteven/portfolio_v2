@@ -28,6 +28,7 @@ export async function POST (request: Request) {
       data: body.data
     })
     return NextResponse.json({
+      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
       message: `view id: ${newView.id}`
     })
   } catch (error) {

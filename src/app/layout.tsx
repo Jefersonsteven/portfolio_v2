@@ -1,8 +1,10 @@
 'use client'
 import 'animate.css'
-import '@/scss/globals.scss'
+import '@/styles/globals.css'
+import '@/styles/variables.css'
+import '@/styles/class.scss'
+import '@/styles/scroll.scss'
 import 'normalize.css'
-import '@/scss/variables.scss'
 import { Inter, Montserrat } from 'next/font/google'
 import React, { useState } from 'react'
 import { ReactQueryProvider } from '@/providers/ReactQueryProvider'
@@ -46,7 +48,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
         </head>
         <body onMouseMove={handleMouse} className={inter.className}>
           {coordinates.x > 0 && coordinates.y > 0 && window.innerWidth > 700 &&
-            <Mouse coordinates={coordinates}/>
+            <Mouse coordinates={coordinates} />
           }
           {children}
         </body>

@@ -1,0 +1,28 @@
+.navigation {
+    display: flex;
+    gap: 10px;
+    &__pagination {
+      display: flex;
+      gap: 8px;
+    }
+    &__button {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      background: var(--grey);
+      color: white;
+      font-weight: 800;
+      &--navigation, &--current {
+        background: var(--red);
+        color: white;
+      }
+    }
+    &__button:hover {
+      background: var(--b-opposite);
+      color: var(--t-opposite);
+    }
+    &__button:visited {
+      font-size: 18px;
+    }
+  }

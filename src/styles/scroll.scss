@@ -9,24 +9,24 @@
 
 
 ::-webkit-scrollbar-track {
-  background-color: var(--red);
+  background-color: var(--primary-100);
   border-radius: 10px;
   margin-block: .5em;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--red-dark);
+  background-color: var(--bg-100);
   border-radius: 10px;
-  border: .15em solid var(--red);
+  border: .15em solid var(--bg-200);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--red-hover);
+  background-color: var(--bg-300);
 }
 
-@supports (scrollbar-color: var(--red) var(--red-hover) var(--red-dark)) {
+@supports (scrollbar-color: var(--bg-200) var(--bg-300) var(--bg-100)) {
   * {
-    scrollbar-color: var(--red-dark) var(--red);
+    scrollbar-color: var(--bg-100) var(--bg-200);
     scrollbar-width: thin;
   }
 }

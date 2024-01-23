@@ -1,6 +1,6 @@
 'use client'
 import './page.scss'
-import { BackButton } from '@/components/atoms/BackButton/BackButton'
+import BackButton from '@/components/atoms/BackButton/BackButton'
 import { Certificates } from '@/components/pages/Certificates/Certificates'
 
 export default function Projects () {

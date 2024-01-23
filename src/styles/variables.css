@@ -1,0 +1,29 @@
+:root {
+  --primary-100: #bb86fc;
+  --primary-200: #9c6add;
+  --primary-300: #572c97;
+  --accent-100: #03dac6;
+  --accent-200: #007768;
+  --text-100: #ffffff;
+  --text-200: #e0e0e0;
+  --bg-100: #0f0c29;
+  --bg-200: #1d1c39;
+  --bg-300: #353352;
+  --h1: 6rem;
+  --heading: 3.2rem;
+  --subtitle: 2.4rem;
+  --action: 2rem;
+  --paragraph: 1.6rem;
+  --spam: 1rem;
+}
+
+@media (width > 1100px) {
+  :root {
+    --h1: 11.8rem;
+    --heading: 2.4rem;
+    --subtitle: 2rem;
+    --action: 1.6rem;
+    --paragraph: 1.2rem;
+    --spam: 1.4rem;
+  }
+}
