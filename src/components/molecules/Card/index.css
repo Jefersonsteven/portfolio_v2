@@ -7,7 +7,6 @@
     flex-wrap: wrap;
   }
   & .project__media {
-    width: 100%;
     min-height: 228px;
     position: relative;
     overflow: hidden;

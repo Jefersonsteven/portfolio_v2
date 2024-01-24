@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 32px;
   position: relative;
+  max-width: 100%;
   & .circles {
     top: 0;
     left: 0;
@@ -11,5 +12,8 @@
     position: absolute;
     display: grid;
     place-items: center;
+  }
+  & .heading {
+    padding-inline: 8px;
   }
 }

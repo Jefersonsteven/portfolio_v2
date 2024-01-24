@@ -1,4 +1,3 @@
-import Navigation from '@/components/molecules/Navigation/Navigation'
 import { About } from '@/components/organisms/About/About'
 import { Contact } from '@/components/organisms/Contact/Contact'
 import { Footer } from '@/components/organisms/Footer/Footer'
@@ -9,7 +8,6 @@ import { Projects } from '@/components/organisms/Projects/Projects'
 export const SinglePageHome = () => {
   return (
     <>
-      <Navigation />
       <Header />
       <Home />
       <About />
