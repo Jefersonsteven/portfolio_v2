@@ -4,16 +4,16 @@ import 'animate.css'
 import '@/styles/variables.css'
 import '@/styles/scroll.scss'
 import 'normalize.css'
-import { Inter, Montserrat } from 'next/font/google'
+import { League_Spartan, Montserrat } from 'next/font/google'
 import React, { useState } from 'react'
 import { ReactQueryProvider } from '@/providers/ReactQueryProvider'
 import { useThemeStore } from '@/store/theme'
 import { useLanguageStore } from '@/store/language'
 import { Mouse } from '@/components/atoms/Mouse/Mouse'
 
-const inter = Inter({ subsets: ['latin'] })
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const montserrat = Montserrat({ subsets: ['latin'] })
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const leguaeSpartan = League_Spartan({ subsets: ['latin'] })
 
 interface Props {
   children: React.ReactNode
@@ -45,7 +45,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
           <title>Jefferson Steven</title>
           <meta name="description" content="'Mi nombre es jeffer steven y soy desarrollador Fullstack web centrado en el Frontend'" />
         </head>
-        <body onMouseMove={handleMouse} className={inter.className}>
+        <body onMouseMove={handleMouse} className={montserrat.className}>
           {coordinates.x > 0 && coordinates.y > 0 && window.innerWidth > 700 &&
             <Mouse coordinates={coordinates} />
           }

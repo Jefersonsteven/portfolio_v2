@@ -9,6 +9,9 @@
     flex-direction: column;
     gap: 36px;
     z-index: 30;
+    & .title {
+      margin: 0;
+    }
   }
   & footer {
     z-index: 30;
