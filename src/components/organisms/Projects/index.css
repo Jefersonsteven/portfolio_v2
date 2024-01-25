@@ -12,8 +12,10 @@
     position: absolute;
     display: grid;
     place-items: center;
+    z-index: 10;
   }
   & .heading {
     padding-inline: 8px;
+    z-index: 30;
   }
 }
