@@ -12,13 +12,21 @@ export const Header = () => {
   return (
     <header id="home" className="page header">
       <div className="nav-container">
-        <button onClick={handleSwitchMenu} className="reset-button">
+        <button
+          type='button'
+          onClick={handleSwitchMenu}
+          className="reset-button"
+        >
           <img src="/assets/svgs/menu.svg" alt="menu" />
         </button>
 
         <div ref={menu} className="menu page">
           <div className="switch-container">
-            <button onClick={handleSwitchMenu} className="reset-button">
+            <button
+              type='button'
+              onClick={handleSwitchMenu}
+              className="reset-button"
+            >
               <img src="/assets/svgs/close.svg" alt="menu" />
             </button>
           </div>
@@ -29,6 +37,7 @@ export const Header = () => {
 
       <div>
         <button
+          type='button'
           aria-describedby="configuration"
           title="Configuration"
           className="reset-button"
