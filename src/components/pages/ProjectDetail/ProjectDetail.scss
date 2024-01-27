@@ -1,6 +1,7 @@
 .project {
   display: flex;
   flex-direction: column;
+  gap: 16px;
   &__preview,
   &__technologies,
   &__description,
@@ -9,10 +10,11 @@
     display: flex;
     flex-direction: column;
   }
-  &__title {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+  &__description, &__preview, 
+  &__technologies,
+  &__tasks,
+  &__list-tasks {
+    gap: 16px;
   }
   &__tag {
     display: flex;
@@ -59,7 +61,7 @@
   &__links {
     display: flex;
     flex-wrap: wrap;
-    text-decoration: underline;
+    gap: 8px;
   }
   &__link {
     display: flex;

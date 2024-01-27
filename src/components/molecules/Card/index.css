@@ -27,6 +27,10 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    & .project__title a {
+      font-size: var(--subtitle);
+      color: var(--primary-100);
+    }
     & .project__description {
       text-overflow: ellipsis;
       overflow: hidden;

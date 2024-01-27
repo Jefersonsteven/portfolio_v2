@@ -10,14 +10,14 @@ interface Props {
 
 export const ProjectDetail: React.FC<Props> = ({ project }) => {
   return (
-    <article className='project large-gap'>
+    <article className='project page'>
       <div className='project__preview small-gap'>
         <div className='project__title small-gap'>
-          <h2 className='title'>
-            <b>{project.title}</b>
+          <h2 className='heading'>
+            <strong>{project.title}</strong>
           </h2>
           {project.team &&
-            <span className='project__tag'>
+            <span className='tag'>
               {project.description.title === 'Resumen'
                 ? 'Trabajo en equipo'
                 : 'Team Work'
@@ -27,11 +27,8 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
         </div>
 
         <div className='project__video'>
-          <video
-            autoPlay
-            loop
-            src={project.gif}
-          ></video>
+          {/* biome-ignore lint/a11y/useMediaCaption: <explanation> */}
+          <video autoPlay loop src={project.gif} />
           <img src={project.image} alt={project.title} />
         </div>
 
@@ -45,7 +42,7 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
             {project.tech_stack.map(tech => {
               const techId = useId()
               return (
-                <span key={techId} className='project__tag'>
+                <span key={techId} className='tag'>
                   <p>{tech}</p>
                   {vendingIcons(tech, 20)}
                 </span>
@@ -55,13 +52,13 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
         </div>
       </div>
 
-      <div className='project__description small-gap'>
+      <div className='project__description'>
+        <b>{project.description.title}: </b>
         <p className='project__summary'>
-          <b>{project.description.title}: </b>
           {project.description.content}
         </p>
 
-        <p><b>ROL:</b> {project.rol}</p>
+        <p><b>ROL : </b> {project.rol}</p>
 
         <div className='project__list-tasks small-gap'>
           <h3 className='project__tasks-title'>
@@ -91,7 +88,7 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
                 href={project.github}
                 as={undefined}
               >
-                <b>Github</b>
+                Github
               </Link>
               {vendingIcons('link', 20)}
             </div>
@@ -105,7 +102,7 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
                 href={project.web}
                 as={undefined}
               >
-                <b>Web</b>
+                Web
               </Link>
               {vendingIcons('link', 20)}
             </div>

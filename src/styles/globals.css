@@ -81,6 +81,10 @@ textarea {
   font-size: var(--paragraph);
 }
 
+b {
+  color: var(--primary-100);
+}
+
 span {
   font-size: var(--spam);
 }
@@ -114,11 +118,18 @@ a:hover {
 
 .tag {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 8px;
   background-color: var(--bg-300);
   border-radius: 8px;
   text-transform: uppercase;
+  & svg,
+  img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 button {
