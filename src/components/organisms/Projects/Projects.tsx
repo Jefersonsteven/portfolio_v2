@@ -7,7 +7,7 @@ export const Projects = () => {
       <h2 className="heading">PROJECTS</h2>
       <SliderProjects />
       <figure className="circles">
-        <div className="circle-primary"></div>
+        <div className="circle-primary" />
       </figure>
     </section>
   )

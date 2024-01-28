@@ -80,7 +80,6 @@
     font-weight: bold;
     & .option {
       text-decoration: none;
-      color: #fff;
     }
   }
 }
@@ -99,5 +98,29 @@
   }
   100% {
     transform: translateX(0%);
+  }
+}
+
+@media (width >= 1130px) {
+  .header {
+    position: fixed;
+    top: 0;
+    flex-direction: row;
+    & .nav-container {
+      & .reset-button {
+        display: none;
+      }
+    }
+    & .menu {
+      display: flex;
+      width: max-content;
+      height: max-content;
+      position: static;
+      padding: 0;
+      background-color: transparent;
+      & .switch-container {
+        display: none;
+      }
+    }
   }
 }

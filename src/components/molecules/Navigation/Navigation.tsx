@@ -14,7 +14,7 @@ export default function Navigation () {
   return (
     <div className="nav">
       <div className="nav__interaction">
-        <div className="line"></div>
+        <div className="line" />
         <div className="circles-container">
           <a onClick={handleRouteChange} href="#home" className={`circle-nav ${route === 'home' ? 'circle-nav--active' : 'circle-nav--disable'}`}></a>
           <a onClick={handleRouteChange} href="#about" className={`circle-nav ${route === 'about' ? 'circle-nav--active' : 'circle-nav--disable'}`}></a>

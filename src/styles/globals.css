@@ -249,3 +249,15 @@ textarea {
 .circle-secondary {
   background: var(--accent-100);
 }
+
+@media (min-width: 768px) {
+  .page {
+    padding: 36px;
+  }
+
+  .circle-primary,
+  .circle-secondary {
+    width: 351px;
+    height: 351px;
+  }
+}
