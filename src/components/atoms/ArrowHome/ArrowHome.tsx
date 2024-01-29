@@ -10,7 +10,7 @@ export const ArrowHome = () => {
     <img
       onClick={handleClick}
       className="home__arrow-scroll"
-      src="/assets/svgs/arrow.svg"
+      src="/assets/svgs/arrow-right.svg"
       alt="arrow"
     />
   )

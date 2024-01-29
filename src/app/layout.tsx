@@ -27,7 +27,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
     y: 0
   })
 
-  function handleMouse (e: React.MouseEvent) {
+  const handleMouse = (e: React.MouseEvent) => {
     if (window.innerWidth > 700) {
       const x = e.clientX
       const y = e.clientY
@@ -45,7 +45,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
           <title>Jefferson Steven</title>
           <meta name="description" content="'Mi nombre es jeffer steven y soy desarrollador Fullstack web centrado en el Frontend'" />
         </head>
-        <body onMouseMove={handleMouse} className={montserrat.className}>
+        <body onMouseMove={handleMouse} className={`${montserrat.className} body`}>
           {coordinates.x > 0 && coordinates.y > 0 && window.innerWidth > 700 &&
             <Mouse coordinates={coordinates} />
           }

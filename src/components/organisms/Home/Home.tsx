@@ -1,4 +1,4 @@
-import { ArrowHome } from '@/components/ArrowHome/ArrowHome'
+import { ArrowHome } from '@/components/atoms/ArrowHome/ArrowHome'
 import './home.css'
 
 export const Home = () => {

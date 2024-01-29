@@ -9,3 +9,49 @@
     display: none;
   }
 }
+
+@media (width >= 1130px) {
+  .slider {
+    height: 50dvh;
+    width: 100dvw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    & .slider__projects {
+      width: max-content;
+      height: 100%;
+      flex-direction: row;
+      gap: 32px;
+      position: relative;
+      padding: 0 25%;
+      margin-bottom: 16px;
+    }
+    & .slider__navigation {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 32px;
+      & .slider__points {
+        display: flex;
+        gap: 32px;
+        & .slider__point {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          border: 2px solid var(--primary-100);
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,4 +1,5 @@
 .projects {
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -17,5 +18,19 @@
   & .heading {
     padding-inline: 8px;
     z-index: 30;
+  }
+}
+
+@media (width >= 1130px) {
+  .projects {
+    padding: 0;
+    padding-top: 66px;
+    padding-bottom: 157px;
+    min-width: 100dvw;
+    height: 100vh;
+    & .heading {
+      padding-left: 180px;
+      padding-right: 72px;
+    }
   }
 }

@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 36px;
   position: relative;
+  scroll-snap-align: start;
   & main {
     display: flex;
     flex-direction: column;
@@ -49,6 +50,7 @@
 
 @media (width >= 1130px) {
   .about {
+    height: 100vh;
     & main {
       flex-direction: row;
       gap: 36px;

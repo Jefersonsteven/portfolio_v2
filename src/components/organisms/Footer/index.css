@@ -37,6 +37,7 @@ footer {
     justify-content: space-between;
     width: 100%;
     z-index: 30;
+    padding-top: 0px;
   }
 
   .socials {
