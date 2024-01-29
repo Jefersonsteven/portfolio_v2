@@ -10,7 +10,7 @@ export const Header = () => {
     menu.current?.classList.toggle('active')
   }
   return (
-    <header id="home" className="page header">
+    <header className="page header">
       <div className="nav-container">
         <button
           type='button'

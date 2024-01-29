@@ -46,3 +46,27 @@
 .tags {
   display: none;
 }
+
+@media (width >= 1130px) {
+  .about {
+    & main {
+      flex-direction: row;
+      gap: 36px;
+      & .about__profile {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      & .about__info {
+        & .tags-mobile {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .tags {
+    display: flex;
+    gap: 16px;
+  }
+}

@@ -3,21 +3,21 @@ import { Socials } from '@/components/molecules/Socials/Socials'
 
 export const Footer = () => {
   return (
-    <footer className="page">
+    <footer className="page footer">
       <a title="home" href="/" className="home-action">
         <div className="logo-container">
-          <div className="logo-animate"></div>
+          <div className="logo-animate" />
         </div>
         <img src="/assets/images/logo-dynamic.png" alt="Logo" className="logo" />
       </a>
 
       <p className="copy">
         <span>
-          Designed in Figma and coded in Visual Studio Code by yours truly
+          Designed in Figma and coded in Visual Studio Code by yours truly{' '}
         </span>
         <strong>
           <a target="_blank" href="https://github.com/Jefersonsteven" rel="noreferrer">
-            @Jeffersonsteven.
+            @Jeffersonsteven.{' '}
           </a>
         </strong>
         <span>

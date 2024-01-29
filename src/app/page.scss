@@ -5,3 +5,12 @@
   flex-direction: column;
   width: 100dvw;
 }
+
+@media (width >= 1130px) {
+  .landing {
+    flex-direction: row;
+    width: max-content;
+    height: 100dvh;
+    overflow-x: scroll;
+  }
+}

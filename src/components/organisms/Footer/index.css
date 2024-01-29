@@ -27,3 +27,24 @@ footer {
     }
   }
 }
+
+@media (width >= 1130px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 30;
+  }
+
+  .socials {
+    width: max-content;
+    gap: 32px;
+  }
+
+  .copy {
+    width: 60%;
+  }
+}

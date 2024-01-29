@@ -12,8 +12,8 @@
   --h1: 6rem;
   --heading: 3.2rem;
   --subtitle: 2.4rem;
-  --action: 2rem;
-  --paragraph: 1.6rem;
+  --action: 1.6rem;
+  --paragraph: 1.2rem;
   --spam: 1rem;
 }
 
@@ -22,8 +22,8 @@
     --h1: 14.8rem;
     --heading: 2.4rem;
     --subtitle: 2rem;
-    --action: 1.6rem;
-    --paragraph: 1.2rem;
+    --action: 2rem;
+    --paragraph: 1.6rem;
     --spam: 1.4rem;
   }
 }

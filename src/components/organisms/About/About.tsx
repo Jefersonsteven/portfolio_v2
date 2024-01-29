@@ -1,9 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
+import Link from 'next/link'
 import './index.css'
 
 export const About = () => {
   return (
-    <section id="about" className="about page">
+    <section id="about" className="about page pc">
       <header>
         <h2 className="heading">ABOUT ME</h2>
       </header>
@@ -46,13 +47,13 @@ export const About = () => {
           </article>
 
           <div className="tags-mobile">
-            <a href="/certificates">Certificates</a>
-            <a target="_blank" href="/assets/pdfs/cv-sp.pdf">CV</a>
+            <Link href="/certificates">Certificates</Link>
+            <Link target="_blank" href="/assets/pdfs/cv-sp.pdf" rel="noreferrer">CV</Link>
           </div>
         </section>
       </main>
       <figure className="circles">
-        <div className="circle-primary"></div>
+        <div className="circle-primary" />
       </figure>
     </section>
   )

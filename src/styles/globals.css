@@ -250,7 +250,7 @@ textarea {
   background: var(--accent-100);
 }
 
-@media (min-width: 768px) {
+@media (width >= 1130px) {
   .page {
     padding: 36px;
   }
@@ -259,5 +259,15 @@ textarea {
   .circle-secondary {
     width: 351px;
     height: 351px;
+  }
+
+  body {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .pc {
+    padding: 65px 102px 132px 157px;
+    min-width: 100dvw;
   }
 }
