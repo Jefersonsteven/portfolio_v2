@@ -7,7 +7,7 @@ export const SliderProjects = () => {
     <main className="slider">
       <section className="slider__projects">
         {
-          data.projects.data.slice(1, 4).map(project => {
+          data.projects.data.slice(1, 4).map((project, index) => {
             return (
               <Card
                 key={crypto.randomUUID()}
@@ -17,6 +17,7 @@ export const SliderProjects = () => {
                 video={project.gif}
                 technologies={project.tech_stack}
                 url={`/projects/${project.id[1]}`}
+                index={index}
               />
             )
           })

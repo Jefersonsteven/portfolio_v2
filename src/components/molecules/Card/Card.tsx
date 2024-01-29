@@ -9,11 +9,14 @@ interface Props {
   video: string
   technologies: string[]
   url: string
+  index: number
 }
 
-export default function Card ({ title, description, image, video, technologies, url }: Props) {
+const Card = ({ title, description, image, video, technologies, url, index }: Props) => {
+  // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+  const expression = `project ${index !== 0 && 'project-hidden'}`
   return (
-    <article className="project">
+    <article className={expression}>
       <figure className="project__media">
         <video src={video} autoPlay loop muted />
         <img src={image} alt={title} />
@@ -36,3 +39,5 @@ export default function Card ({ title, description, image, video, technologies, 
     </article>
   )
 }
+
+export default Card

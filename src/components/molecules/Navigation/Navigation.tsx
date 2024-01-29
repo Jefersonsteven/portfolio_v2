@@ -1,10 +1,10 @@
 'use client'
 import { useState } from 'react'
 
-export default function Navigation () {
+const Navigation = () => {
   const [route, setRoute] = useState('home')
 
-  function handleRouteChange (event: React.MouseEvent<HTMLAnchorElement>) {
+  const handleRouteChange = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const menu = document.querySelector('.menu')
     menu?.classList.remove('active')
     const route = event.currentTarget.href.split('#')[1]
@@ -31,3 +31,5 @@ export default function Navigation () {
     </div>
   )
 }
+
+export default Navigation

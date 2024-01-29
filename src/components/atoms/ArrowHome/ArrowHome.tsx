@@ -3,15 +3,21 @@ import { useRouter } from 'next/navigation'
 
 export const ArrowHome = () => {
   const router = useRouter()
+
   const handleClick = () => {
     router.push('#about')
   }
+
   return (
-    <img
+    <button
       onClick={handleClick}
-      className="home__arrow-scroll"
-      src="/assets/svgs/arrow-right.svg"
-      alt="arrow"
-    />
+      className='reset-button'
+    >
+      <img
+        className="home__arrow-scroll"
+        src="/assets/svgs/arrow-right.svg"
+        alt="arrow"
+      />
+    </button>
   )
 }
