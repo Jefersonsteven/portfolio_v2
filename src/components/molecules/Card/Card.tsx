@@ -1,4 +1,3 @@
-import { randomUUID } from 'crypto'
 import './index.css'
 import Link from 'next/link'
 
@@ -10,11 +9,12 @@ interface Props {
   technologies: string[]
   url: string
   index: number
+  current: number
 }
 
-const Card = ({ title, description, image, video, technologies, url, index }: Props) => {
+const Card = ({ title, description, image, video, technologies, url, index, current }: Props) => {
   // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-  const expression = `project ${index !== 0 && 'project-hidden'}`
+  const expression = `project ${index !== current && 'project-hidden'}`
   return (
     <article className={expression}>
       <figure className="project__media">
@@ -31,7 +31,7 @@ const Card = ({ title, description, image, video, technologies, url, index }: Pr
         <div className="project__stack">
           {
             technologies.map((technology, i) => (
-              <span key={randomUUID()} className="tag">{technology}</span>
+              <span key={crypto.randomUUID()} className="tag">{technology}</span>
             ))
           }
         </div>
