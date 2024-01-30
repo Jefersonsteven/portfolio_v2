@@ -145,6 +145,7 @@ button {
   padding: 15px 30px;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 
 .btn-primary {
@@ -178,6 +179,11 @@ textarea {
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset,
     -2px -2px 2px 0px rgba(0, 0, 0, 0.25) inset,
     2px 2px 0.3px 0px rgba(0, 0, 0, 0.25);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
 }
 
 .logo-container {

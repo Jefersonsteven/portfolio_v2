@@ -32,3 +32,15 @@
     z-index: 30;
   }
 }
+
+@media (width >= 1130px) {
+  .contact {
+    width: 100dvw;
+    & .contact__form {
+      width: 50%;
+      & .btn {
+        width: max-content;
+      }
+    }
+  }
+}

@@ -48,6 +48,9 @@
             transform: scale(1.1);
           }
         }
+        & .slider__point--active {
+          background-color: var(--accent-100);
+        }
       }
       & .slider__arrow-container {
         width: 120px;

@@ -75,7 +75,7 @@ export const SliderProjects = () => {
                 <button
                   key={crypto.randomUUID()}
                   type='button'
-                  className="slider__point reset-button"
+                  className={`slider__point reset-button ${current === i ? 'slider__point--active' : ''}`}
                   aria-label={`project-${i + 2}`}
                   onClick={() => { handleDotClick(i) }}
                 />
