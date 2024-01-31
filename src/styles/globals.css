@@ -273,7 +273,7 @@ textarea:focus {
 
   .body {
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: hidden;
   }
 
   .pc {

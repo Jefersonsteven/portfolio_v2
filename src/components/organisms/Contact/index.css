@@ -36,10 +36,33 @@
 @media (width >= 1130px) {
   .contact {
     width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     & .contact__form {
-      width: 50%;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: flex-end;
+      height: 100%;
+      & .contact__inputs {
+        height: 100%;
+        width: 40%;
+        & label {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+        & label:last-child {
+          height: 100%;
+          & textarea {
+            height: 100%;
+          }
+        }
+      }
       & .btn {
         width: max-content;
+        height: max-content;
       }
     }
   }

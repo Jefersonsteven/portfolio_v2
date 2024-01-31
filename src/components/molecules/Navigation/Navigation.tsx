@@ -1,6 +1,6 @@
 'use client'
-import { useState } from 'react'
-
+import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 const Navigation = () => {
   const [route, setRoute] = useState('home')
 
@@ -10,6 +10,19 @@ const Navigation = () => {
     const route = event.currentTarget.href.split('#')[1]
     setRoute(route)
   }
+
+  const handleResize = () => {
+    if (window.innerWidth > 1130) {
+      router.push('/#home')
+      setRoute('home')
+    }
+  }
+
+  const router = useRouter()
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+  }, [])
 
   return (
     <div className="nav">

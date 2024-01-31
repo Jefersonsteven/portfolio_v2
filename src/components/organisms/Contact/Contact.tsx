@@ -8,19 +8,19 @@ export const Contact = () => {
         <div className="contact__inputs">
           <label>
             Name
-            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Pepito Patolin" />
           </label>
           <label>
             Email
-            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="pepito@email.com" />
           </label>
           <label>
             Subject
-            <input type="text" placeholder="Subject" />
+            <input type="text" placeholder="Colaboración" />
           </label>
           <label>
             Message
-            <textarea rows={10} placeholder="Message"></textarea>
+            <textarea placeholder="Message ..."></textarea>
           </label>
         </div>
         <button className="btn btn-primary" title="send"> Send</button>
