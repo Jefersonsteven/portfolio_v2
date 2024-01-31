@@ -5,7 +5,7 @@ import '@/styles/variables.css'
 import '@/styles/scroll.scss'
 import 'normalize.css'
 import { League_Spartan, Montserrat } from 'next/font/google'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ReactQueryProvider } from '@/providers/ReactQueryProvider'
 import { useThemeStore } from '@/store/theme'
 import { useLanguageStore } from '@/store/language'
@@ -37,6 +37,31 @@ const RootLayout: React.FC<Props> = ({ children }) => {
       })
     }
   }
+
+  useEffect(() => {
+    const body = document.documentElement
+    if (body === null) return
+    const handleScroll = (e: WheelEvent) => {
+      // apply scroll to body with scrollBy and left
+      if (e.deltaY > 0) {
+        body.scrollBy({
+          left: body.offsetWidth,
+          behavior: 'smooth'
+        })
+      } else {
+        body.scrollBy({
+          left: -body.offsetWidth,
+          behavior: 'smooth'
+        })
+      }
+    }
+
+    body?.addEventListener('wheel', handleScroll)
+
+    return () => {
+      body?.removeEventListener('wheel', handleScroll)
+    }
+  }, [])
 
   return (
     <ReactQueryProvider>
