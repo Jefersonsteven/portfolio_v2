@@ -55,6 +55,7 @@
       position: absolute;
       background-color: #000000d6;
       border-radius: 18px;
+      display: none;
     }
     & .project__media {
       width: 100%;
@@ -64,6 +65,10 @@
 
   .project-hidden {
     animation: scale 0.5s ease-in-out forwards;
+  }
+
+  .project:hover .project__info {
+    display: flex;
   }
 }
 
