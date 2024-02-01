@@ -6,6 +6,12 @@
   &__content {
     display: flex;
     flex-direction: column;
-    max-width: 1513px;
+  }
+}
+
+@media (width >= 1130px) {
+  .project-view {
+    width: 100vw;
+    height: 100vh;
   }
 }

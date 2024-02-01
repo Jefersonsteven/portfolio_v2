@@ -4,7 +4,7 @@ export default function BackButton () {
   }
 
   return (
-    <button className="btn-back" onClick={handleClick} title="Back">
+    <button className="btn-back page" onClick={handleClick} title="Back">
       <svg
         width="27"
         height="40"

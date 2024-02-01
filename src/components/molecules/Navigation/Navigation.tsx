@@ -12,7 +12,9 @@ const Navigation = () => {
   }
 
   const handleResize = () => {
-    if (window.innerWidth > 1130) {
+    const pathname = window.location.pathname
+    if (window.innerWidth > 1130 && pathname === '/') {
+      console.log(pathname, 'pathname')
       router.push('/#home')
       setRoute('home')
     }

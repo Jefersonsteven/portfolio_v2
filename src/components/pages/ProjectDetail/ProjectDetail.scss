@@ -16,18 +16,8 @@
   &__list-tasks {
     gap: 16px;
   }
-  &__tag {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: var(--grey);
-    color: white;
-    & svg {
-      height: 20px;
-      width: auto;
-    }
+  & .tag {
+    width: max-content;
   }
   &__video {
     position: relative;
@@ -73,6 +63,15 @@
 @media (width >= 1130px) {
   .project {
     flex-direction: row;
+    &__preview {
+      width: 60%;
+    }
+    & .heading {
+      font-size: 6rem;
+    }
+    &__description {
+      width: 40%;
+    }
     &__video {
       min-width: 500px;
     }

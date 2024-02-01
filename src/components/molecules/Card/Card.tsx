@@ -1,5 +1,4 @@
 import './index.css'
-import Link from 'next/link'
 
 interface Props {
   title: string
@@ -23,7 +22,7 @@ const Card = ({ title, description, image, video, technologies, url, index, curr
       </figure>
       <div className="project__info">
         <h3 className="project__title">
-          <Link href={url}>{title}</Link>
+          <a href={url}>{title}</a>
         </h3>
         <p className="project__description">
           {description}
