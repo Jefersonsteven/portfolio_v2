@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import './Mouse.scss'
+import './Mouse.css'
 import { type Coordinates } from '@/types'
 
 export const Mouse: React.FC<Coordinates> = ({ coordinates }) => {

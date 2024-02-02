@@ -6,7 +6,7 @@ import { useRef } from 'react'
 export const Header = () => {
   const menu = useRef<HTMLDivElement>(null)
 
-  function handleSwitchMenu () {
+  const handleSwitchMenu = () => {
     menu.current?.classList.toggle('active')
   }
   return (

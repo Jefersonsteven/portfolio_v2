@@ -2,14 +2,16 @@
   max-width: 1513px;
   display: flex;
   flex-direction: column;
-  &__content {
-    @extend .more-projects;
+  & .more-projects__content {
+    max-width: 1513px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media (width >= 450px) {
   .more-projects {
-    &__content {
+    & .more-projects__content {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
@@ -18,7 +20,7 @@
 
 @media (width >= 1000px) {
   .more-projects {
-    &__content {
+    & .more-projects__content {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }

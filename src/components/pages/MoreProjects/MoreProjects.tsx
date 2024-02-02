@@ -1,6 +1,6 @@
 'use client'
 import { useLanguageStore } from '@/store/language'
-import './MoreProjects.scss'
+import './MoreProjects.css'
 // import { MiniCardProject } from '@/components/molecules/MiniCardProject/MiniCardProject'
 
 export const MoreProjects = () => {

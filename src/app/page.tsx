@@ -1,4 +1,4 @@
-import './page.scss'
+import './page.css'
 import { SinglePageHome } from '@/components/pages/SinglePageHome/SinglePageHome'
 
 const HomeX = () => {

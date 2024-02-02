@@ -2,7 +2,7 @@
   display: flex;
   padding-bottom: 30px;
   justify-content: center;
-  &__content {
+  & .projects-view__content {
     display: flex;
     flex-direction: column;
   }
