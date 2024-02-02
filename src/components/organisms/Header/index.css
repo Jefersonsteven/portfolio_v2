@@ -73,10 +73,10 @@
     }
   }
   & .nav__options {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-transform: uppercase;
+    display: flex;
     font-weight: bold;
     & .option {
       text-decoration: none;
@@ -121,6 +121,15 @@
       background-color: transparent;
       & .switch-container {
         display: none;
+      }
+    }
+    & .nav__options {
+      display: flex;
+    }
+    & .nav__interaction {
+      display: flex;
+      & .circles-container {
+        display: flex;
       }
     }
   }

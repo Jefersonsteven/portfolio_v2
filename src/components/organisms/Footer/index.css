@@ -20,12 +20,6 @@ footer {
   & a {
     border: none;
   }
-  & a:hover {
-    border: none;
-    & svg path {
-      fill: var(--primary-100);
-    }
-  }
 }
 
 @media (width >= 1130px) {
@@ -43,6 +37,12 @@ footer {
   .socials {
     width: max-content;
     gap: 32px;
+    & a:hover {
+      border: none;
+      & svg path {
+        fill: var(--accent-100);
+      }
+    }
   }
 
   .copy {
