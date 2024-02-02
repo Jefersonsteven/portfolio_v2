@@ -14,7 +14,7 @@ import { Mouse } from '@/components/atoms/Mouse/Mouse'
 const montserrat = Montserrat({ subsets: ['latin'] })
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const leguaeSpartan = League_Spartan({ subsets: ['latin'] })
-
+const { pathname } = window.location
 interface Props {
   children: React.ReactNode
 }
@@ -42,17 +42,18 @@ const RootLayout: React.FC<Props> = ({ children }) => {
     const body = document.documentElement
     if (body === null) return
     const handleScroll = (e: WheelEvent) => {
-      // apply scroll to body with scrollBy and left
-      if (e.deltaY > 0) {
-        body.scrollBy({
-          left: body.offsetWidth,
-          behavior: 'smooth'
-        })
-      } else {
-        body.scrollBy({
-          left: -body.offsetWidth,
-          behavior: 'smooth'
-        })
+      if (pathname === '/') {
+        if (e.deltaY > 0) {
+          body.scrollBy({
+            left: body.offsetWidth,
+            behavior: 'smooth'
+          })
+        } else {
+          body.scrollBy({
+            left: -body.offsetWidth,
+            behavior: 'smooth'
+          })
+        }
       }
     }
 

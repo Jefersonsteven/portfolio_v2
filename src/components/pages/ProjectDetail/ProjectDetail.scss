@@ -64,13 +64,13 @@
   .project {
     flex-direction: row;
     &__preview {
-      width: 60%;
+      width: 50%;
     }
     & .heading {
       font-size: 6rem;
     }
     &__description {
-      width: 40%;
+      width: 50%;
     }
     &__video {
       min-width: 500px;

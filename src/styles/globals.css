@@ -272,7 +272,7 @@ textarea:focus {
   }
 
   .body {
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: none;
   }

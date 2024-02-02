@@ -11,8 +11,8 @@ interface Props {
 export const ProjectDetail: React.FC<Props> = ({ project }) => {
   return (
     <article className='project page'>
-      <div className='project__preview small-gap'>
-        <div className='project__title small-gap'>
+      <div className='project__preview'>
+        <div className='project__title'>
           <h2 className='heading'>
             <strong>{project.title}</strong>
           </h2>
@@ -27,7 +27,6 @@ export const ProjectDetail: React.FC<Props> = ({ project }) => {
         </div>
 
         <div className='project__video'>
-          {/* biome-ignore lint/a11y/useMediaCaption: <explanation> */}
           <video autoPlay loop src={project.gif} />
           <img src={project.image} alt={project.title} />
         </div>
