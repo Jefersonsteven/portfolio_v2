@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link'
 import './index.css'
+import Image from 'next/image'
 
 export const About = () => {
   return (
@@ -11,7 +12,7 @@ export const About = () => {
       <main>
         <section className="about__profile">
           <figure>
-            <img src="/assets/images/me.png" alt="jefferson steven" />
+            <Image src="/assets/images/me.png" alt="jefferson steven" />
           </figure>
 
           <div className="tags">
