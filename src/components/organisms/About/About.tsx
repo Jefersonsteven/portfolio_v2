@@ -12,7 +12,7 @@ export const About = () => {
       <main>
         <section className="about__profile">
           <figure>
-            <Image src="/assets/images/me.png" alt="jefferson steven" />
+            <Image width={300} height={300} src="/assets/images/me.png" alt="jefferson steven" />
           </figure>
 
           <div className="tags">
