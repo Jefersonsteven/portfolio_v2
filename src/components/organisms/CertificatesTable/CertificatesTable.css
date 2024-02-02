@@ -1,0 +1,23 @@
+.table {
+  border: 1px solid var(--bg-300);
+  border-radius: 8px;
+  & td {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid var(--bg-300);
+    color: var(--bg-100);
+  }
+  & th {
+    border-radius: 8px;
+    padding: 10px;
+    text-align: start;
+    background-color: var(--bg-300);
+  }
+  & tbody {
+    background: var(--accent-100);
+    text-transform: capitalize;
+  }
+  & thead {
+    text-transform: uppercase;
+  }
+}

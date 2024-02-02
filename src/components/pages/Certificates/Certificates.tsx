@@ -1,20 +1,20 @@
 'use client'
 import { useLanguageStore } from '@/store/language'
-// import { ApiCertificates } from '@/app/api/ip'
-import './Certificates.scss'
+import './Certificates.css'
 import { CertificatesTable } from '@/components/organisms/CertificatesTable/CertificatesTable'
+// import { ApiCertificates } from '@/app/api/ip'
 // import { dataCertificates } from './data'
 
 export const Certificates = () => {
   const { language } = useLanguageStore()
   return (
-    <div className='certificates'>
+    <div className='certificates page'>
       <h1 className='certificates__title title'>
         <b>{language.about_me.certificates}</b>
       </h1>
       {/* <button onClick={handleClick}>create certificate</button> */}
       <div className='certificates__content'>
-        <CertificatesTable/>
+        <CertificatesTable />
       </div>
     </div>
   )

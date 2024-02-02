@@ -1,0 +1,29 @@
+.navigation {
+  display: flex;
+  gap: 10px;
+  & .navigation__pagination {
+    display: flex;
+    gap: 8px;
+  }
+  & .navigation__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: var(--bg-300);
+    color: white;
+    font-weight: 800;
+    & .navigation__button--navigation,
+    &.navigation__button--current {
+      background: var(--accent-100);
+      color: var(--bg-100);
+    }
+  }
+  & .navigation__button:hover {
+    background: var(--accent-100);
+    color: var(--bg-100);
+  }
+  & .navigation__button:visited {
+    font-size: 18px;
+  }
+}

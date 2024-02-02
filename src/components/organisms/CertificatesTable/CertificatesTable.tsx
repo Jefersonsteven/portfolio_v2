@@ -1,5 +1,5 @@
 'use client'
-import './CertificatesTable.scss'
+import './CertificatesTable.css'
 import { useState } from 'react'
 import Link from 'next/link'
 import { vendingIcons } from '@/utilities/vendingIcons'

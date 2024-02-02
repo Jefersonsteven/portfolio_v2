@@ -48,6 +48,7 @@
   .project {
     position: relative;
     width: 50dvw;
+    animation: scale-back 0.5s ease-in-out forwards;
     & .project__info {
       padding: 32px;
       width: 100%;
@@ -83,5 +84,19 @@
   100% {
     transform: scale(0.8);
     opacity: 0.4;
+  }
+}
+
+@keyframes scale-back {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
   }
 }

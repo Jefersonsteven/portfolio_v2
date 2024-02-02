@@ -1,5 +1,5 @@
 .cetificates-view {
-  &__content {
+  & .certificates__content {
     height: 100%;
   }
 }
