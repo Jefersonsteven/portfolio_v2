@@ -44,11 +44,11 @@
   gap: 18px;
   height: 168px;
   & .nav__interaction {
-    width: 13px;
     display: flex;
     align-items: center;
-    position: relative;
     justify-content: center;
+    width: 13px;
+    position: relative;
     & .line {
       height: 100%;
       border-left: 2px dashed var(--accent-200);
@@ -73,10 +73,10 @@
     }
   }
   & .nav__options {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-transform: uppercase;
-    display: flex;
     font-weight: bold;
     & .option {
       text-decoration: none;
