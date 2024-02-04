@@ -2,19 +2,17 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 const Navigation = () => {
-  const [route, setRoute] = useState('home')
+  const [route, setRoute] = useState(window.location.pathname === '/' ? 'home' : window.location.pathname.split('#')[1])
 
   const handleRouteChange = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const menu = document.querySelector('.menu')
     menu?.classList.remove('active')
-    const route = event.currentTarget.href.split('#')[1]
-    setRoute(route)
+    setRoute(event.currentTarget.href.split('#')[1])
   }
 
   const handleResize = () => {
     const pathname = window.location.pathname
     if (window.innerWidth > 1130 && pathname === '/') {
-      console.log(pathname, 'pathname')
       router.push('/#home')
       setRoute('home')
     }
@@ -24,6 +22,28 @@ const Navigation = () => {
 
   useEffect(() => {
     window.addEventListener('resize', handleResize)
+
+    const body = document.documentElement
+
+    if (body === null) return
+    const { pathname } = window?.location
+    const handleScroll = (e: WheelEvent) => {
+      if (pathname === '/') {
+        if (e.deltaY > 0) {
+          body.scrollBy({
+            left: body.offsetWidth,
+            behavior: 'smooth'
+          })
+        } else {
+          body.scrollBy({
+            left: -body.offsetWidth,
+            behavior: 'smooth'
+          })
+        }
+      }
+    }
+
+    body?.addEventListener('wheel', handleScroll)
   }, [])
 
   return (
