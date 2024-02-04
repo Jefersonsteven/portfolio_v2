@@ -54,6 +54,11 @@
     top: 0;
     left: 0;
     flex-direction: row;
+    & .header__content {
+      display: flex;
+      height: max-content;
+      gap: 32px;
+    }
     & .nav-container {
       & .reset-button {
         display: none;

@@ -1,5 +1,6 @@
 'use client'
 import '@/styles/globals.css'
+import '@/styles/animations.css'
 import 'animate.css'
 import '@/styles/variables.css'
 import '@/styles/scroll.scss'

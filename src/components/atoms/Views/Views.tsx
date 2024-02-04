@@ -9,10 +9,9 @@ export const Views = () => {
   const { language } = useLanguageStore()
 
   return (
-    <div className='views'>
-      <div className='views views__content'>
-        <p>{data !== undefined ? `${data}` : '🔃'}</p>
-        <p>{language.header.views}</p>
+    <div className='views tag'>
+      <div className='views__content'>
+        <p>{data !== undefined ? `${data}` : '0'} {language.header.views}</p>
       </div>
       <div className={isLoading ? 'rotate' : ''}>
         {vendingIcons('earth', 20)}

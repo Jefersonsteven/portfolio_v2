@@ -2,6 +2,7 @@
 import Navigation from '@/components/molecules/Navigation/Navigation'
 import './index.css'
 import { useRef } from 'react'
+import { Views } from '@/components/atoms/Views/Views'
 
 export const Header = () => {
   const menu = useRef<HTMLDivElement>(null)
@@ -35,7 +36,8 @@ export const Header = () => {
         </div>
       </div>
 
-      <div>
+      <div className='header__content'>
+        <Views />
         <button
           type='button'
           aria-describedby="configuration"

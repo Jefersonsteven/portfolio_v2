@@ -60,9 +60,42 @@
           }
         }
       }
-      & .btn {
-        width: max-content;
-        height: max-content;
+      & .contact__button {
+        display: grid;
+        place-items: center;
+        position: relative;
+        width: 108px;
+        height: 52px;
+        background-color: var(--primary-100);
+        border-radius: 8px;
+        overflow: hidden;
+        & .contact__button-border {
+          position: relative;
+          top: -287px;
+          left: -100px;
+          width: 476px;
+          height: 400px;
+          background: linear-gradient(
+            90deg,
+            #000000,
+            #03dac6,
+            #240070,
+            #001aff,
+            #ffffff,
+            #1d1c39,
+            #572c97
+          );
+          animation: spin 10s ease-in infinite;
+        }
+        & .btn {
+          width: max-content;
+          height: max-content;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          margin: 2px;
+        }
       }
     }
   }
