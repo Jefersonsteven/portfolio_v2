@@ -1,8 +1,9 @@
 'use client'
+import './index.css'
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 const Navigation = () => {
-  const [route, setRoute] = useState(window.location.pathname === '/' ? 'home' : window.location.pathname.split('#')[1])
+  const [route, setRoute] = useState('home')
 
   const handleRouteChange = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const menu = document.querySelector('.menu')
@@ -24,9 +25,9 @@ const Navigation = () => {
     window.addEventListener('resize', handleResize)
 
     const body = document.documentElement
-
     if (body === null) return
     const { pathname } = window?.location
+
     const handleScroll = (e: WheelEvent) => {
       if (pathname === '/') {
         if (e.deltaY > 0) {
