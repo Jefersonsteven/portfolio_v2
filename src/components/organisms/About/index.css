@@ -73,3 +73,18 @@
     gap: 16px;
   }
 }
+
+@media (width > 1400px) {
+  .about {
+    & main {
+      & .about__info {
+        width: 70%;
+      }
+    }
+  }
+
+  .tags {
+    display: flex;
+    gap: 16px;
+  }
+}

@@ -11,6 +11,7 @@ import { ReactQueryProvider } from '@/providers/ReactQueryProvider'
 import { useThemeStore } from '@/store/theme'
 import { useLanguageStore } from '@/store/language'
 import { Mouse } from '@/components/atoms/Mouse/Mouse'
+import Image from 'next/image'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -49,6 +50,9 @@ const RootLayout: React.FC<Props> = ({ children }) => {
           {coordinates.x > 0 && coordinates.y > 0 && window.innerWidth > 700 &&
             <Mouse coordinates={coordinates} />
           }
+          <figure className='background'>
+            <Image src="/assets/images/galaxy-bg.jpg" alt="background" width={1280} height={874} />
+          </figure>
           {children}
         </body>
       </html>

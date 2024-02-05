@@ -4,14 +4,14 @@ import { Socials } from '@/components/molecules/Socials/Socials'
 export const Footer = () => {
   return (
     <footer className="page footer">
-      <a title="home" href="/" className="home-action">
+      <a title="home" href="/" className="home-action animate__animated animate__fadeInLeft">
         <div className="logo-container">
           <div className="logo-animate" />
         </div>
         <img src="/assets/images/logo-dynamic.png" alt="Logo" className="logo" />
       </a>
 
-      <p className="copy">
+      <p className="copy animate__animated animate__fadeInUpBig">
         <span>
           Designed in Figma and coded in Visual Studio Code by yours truly{' '}
         </span>

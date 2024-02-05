@@ -9,7 +9,7 @@ export const Views = () => {
   const { language } = useLanguageStore()
 
   return (
-    <div className='views tag'>
+    <div className='views tag  animate__animated animate__fadeInDown'>
       <div className='views__content'>
         <p>{data !== undefined ? `${data}` : '0'} {language.header.views}</p>
       </div>

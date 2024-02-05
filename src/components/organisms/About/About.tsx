@@ -16,7 +16,7 @@ export const About = () => {
           </figure>
 
           <div className="tags">
-            <a href="/certificates">Certificates</a>
+            <a href="/certificates">CERTIFICATES</a>
             <a href="/assets/pdfs/cv-sp.pdf">CV</a>
           </div>
         </section>

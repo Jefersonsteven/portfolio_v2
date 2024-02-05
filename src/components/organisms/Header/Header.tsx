@@ -42,7 +42,7 @@ export const Header = () => {
           type='button'
           aria-describedby="configuration"
           title="Configuration"
-          className="reset-button"
+          className="reset-button animate__animated animate__fadeInRight"
         >
           <img src="/assets/svgs/settings.svg" alt="configuration" />
         </button>

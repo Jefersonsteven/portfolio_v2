@@ -29,6 +29,22 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.05;
+  }
+}
+
 .logo {
   width: 37px;
   height: 37px;

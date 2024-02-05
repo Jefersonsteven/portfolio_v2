@@ -1,6 +1,6 @@
 export const Socials = () => {
   return (
-    <nav className="socials">
+    <nav className="socials animate__animated animate__fadeInRight">
       <a
         className="social-option"
         target="_blank"
