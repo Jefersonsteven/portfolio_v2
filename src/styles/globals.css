@@ -39,7 +39,7 @@ html {
   overflow: hidden;
 }
 
-.background-image {
+.background__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
