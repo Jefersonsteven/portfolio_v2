@@ -9,11 +9,7 @@
       },
       {
         "title": "about me",
-        "href": "/#aboutme"
-      },
-      {
-        "title": "tech and tools",
-        "href": "/#techsandtools"
+        "href": "/#about"
       },
       {
         "title": "projects",
@@ -44,8 +40,8 @@
     ]
   },
   "home": {
-    "name": "Jeffer Steven Núñez",
-    "rol": ["Front End", "Fullstack Developer"]
+    "heading": ["CREATIVE DEVELOPER", "JEFFERSON STEVEN", "FRONTEND DEVELOPER"],
+    "subheading": "FUSIONANDO CÓDIGO Y CREATIVIDAD PARA CONSTRUIR EXPERIENCIAS VISUALES IMPACTANTES."
   },
   "about_me": {
     "title": "About me",
@@ -56,15 +52,35 @@
     "description": [
       {
         "id": "1",
-        "paragraph": "My name is Jeffer Steven, a Frontend focused Fullstack Web Developer with experience in web application design and development."
+        "paragraph": "Hi, I'm "
       },
       {
         "id": "2",
-        "paragraph": " I have completed several projects, both in courses and in a bootcamp and in my spare time, some of which are available in my projects."
+        "paragraph": "Jeffer Steven"
       },
       {
         "id": "3",
-        "paragraph": " I am actively looking for exciting and challenging opportunities to continue to grow as a web developer."
+        "paragraph": ", a "
+      },
+      {
+        "id": "4",
+        "paragraph": "Fullstack web developer"
+      },
+      {
+        "id": "5",
+        "paragraph": "focused on Frontend and deeply immersed in the world of web application design and development."
+      },
+      {
+        "id": "6",
+        "paragraph": "Currently, I am actively seeking interesting and challenging opportunities to further improve my skills as a web developer. My experience includes"
+      },
+      {
+        "id": "7",
+        "paragraph": " HTML, CSS, JavaScript, ReactJS, Tailwind, CSS, Sass, Next.js, Node.js, and PostgreSQL"
+      },
+      {
+        "id": "8",
+        "paragraph": "I am eager to contribute my skills to innovative projects and look forward to the opportunities ahead."
       }
     ],
     "certificates": "certificates"

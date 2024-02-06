@@ -1,13 +1,17 @@
+'use client'
 /* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link'
 import './index.css'
 import Image from 'next/image'
+import { useLanguageStore } from '@/store/language'
 
 export const About = () => {
+  const { language } = useLanguageStore()
+
   return (
     <section id="about" className="about page pc">
       <header>
-        <h2 className="heading">ABOUT ME</h2>
+        <h2 className="heading">{language.about_me.title}</h2>
       </header>
       <main>
         <section className="about__profile">
@@ -16,40 +20,33 @@ export const About = () => {
           </figure>
 
           <div className="tags">
-            <a href="/certificates">CERTIFICATES</a>
-            <a href="/assets/pdfs/cv-sp.pdf">CV</a>
+            <Link href="/certificates">{language.about_me.certificates}</Link>
+            <Link target="__blank" href={language.header.social_media[3].href} rel="noreferrer">CV</Link>
           </div>
         </section>
 
         <section className="about__info">
           <article>
-            <p>Hi, I'm <strong>Jeffer Steven</strong>, a <strong>Fullstack web developer</strong>
-              focused on Frontend and deeply immersed in the world of web application
-              design and development.
+            <p>{language.about_me.description[0].paragraph}<strong>{language.about_me.description[1].paragraph}</strong>{language.about_me.description[2].paragraph}<strong>{language.about_me.description[3].paragraph}</strong>
+              {language.about_me.description[4].paragraph}
             </p>
 
             <p>
-              I have successfully completed several projects, both in structured
-              courses, bootcamps and during my free time. You can explore some of
-              these projects in my portfolio.
+              {language.about_me.description[5].paragraph}
             </p>
 
             <p>
-              Currently, I am actively seeking interesting and challenging
-              opportunities to further improve my skills as a web developer. My
-              experience includes <strong> HTML, CSS, JavaScript, ReactJS, Tailwind, CSS, Sass, Next.js,
-                Node.js, and PostgreSQL</strong>.
+              {language.about_me.description[6].paragraph}<strong> {language.about_me.description[0].paragraph}</strong>.
             </p>
 
             <p>
-              I am eager to contribute my skills to innovative projects and look
-              forward to the opportunities ahead.
+              {language.about_me.description[7].paragraph}
             </p>
           </article>
 
           <div className="tags-mobile">
-            <Link href="/certificates">Certificates</Link>
-            <Link target="_blank" href="/assets/pdfs/cv-sp.pdf" rel="noreferrer">CV</Link>
+            <Link href="/certificates">{language.about_me.certificates}</Link>
+            <Link target="__blank" href={language.header.social_media[3].href} rel="noreferrer">CV</Link>
           </div>
         </section>
       </main>

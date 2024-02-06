@@ -9,11 +9,7 @@
       },
       {
         "title": "sobre mí",
-        "href": "/#aboutme"
-      },
-      {
-        "title": "tecnologías y herramientas",
-        "href": "/#techsandtools"
+        "href": "/#about"
       },
       {
         "title": "proyectos",
@@ -44,8 +40,8 @@
     ]
   },
   "home": {
-    "name": "Jeffer Steven Núñez",
-    "rol": ["Desarrollador Front End", " Fullstack"]
+    "heading": ["DESARROLLADOR CREATIVO", "JEFFERSON STEVEN", "DESARROLLADOR FRONTEND"],
+    "subheading": "FUSIONANDO CÓDIGO Y CREATIVIDAD PARA CONSTRUIR EXPERIENCIAS VISUALES IMPACTANTES."
   },
   "about_me": {
     "title": "Sobre mí",
@@ -56,15 +52,35 @@
     "description": [
       {
         "id": "1",
-        "paragraph": "Mi nombre es Jeffer Steven, un desarrollador web Fullstack enfocado en Frontend con experiencia en diseño y desarrollo de aplicaciones web."
+        "paragraph": "Hola, soy "
       },
       {
         "id": "2",
-        "paragraph": "He completado varios proyectos, tanto en cursos como en un bootcamp y en mi tiempo libre, algunos de los cuales están disponibles en mis proyectos."
+        "paragraph": "Jeffer Steven"
       },
       {
         "id": "3",
-        "paragraph": "Estoy buscando activamente emocionantes oportunidades desafiantes para seguir creciendo como desarrollador web."
+        "paragraph": ", un "
+      },
+      {
+        "id": "4",
+        "paragraph": "desarrollador web Fullstack"
+      },
+      {
+        "id": "5",
+        "paragraph": "enfocado en Frontend y profundamente inmerso en el mundo del diseño y desarrollo de aplicaciones web."
+      },
+      {
+        "id": "6",
+        "paragraph": "Actualmente, estoy buscando activamente oportunidades interesantes y desafiantes para mejorar aún más mis habilidades como desarrollador web. Mi experiencia incluye"
+      },
+      {
+        "id": "7",
+        "paragraph": "HTML, CSS, JavaScript, ReactJS, Tailwind, CSS, Sass, Next.js, Node.js y PostgreSQL."
+      },
+      {
+        "id": "8",
+        "paragraph": "Estoy ansioso por contribuir con mis habilidades a proyectos innovadores y espero las oportunidades que se presenten."
       }
     ],
     "certificates": "certificados"

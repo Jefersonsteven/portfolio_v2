@@ -81,6 +81,7 @@ button,
 a {
   font-family: "League Spartan", sans-serif;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 h1 {

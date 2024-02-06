@@ -82,7 +82,7 @@ export const vendingIcons = (nameIcon: string, size: number) => {
       return <p className='center' style={{ width: `${size}px`, height: `${size}px`, fontWeight: 'bold' }}>EN</p>
 
     case 'es':
-      return <p className='center' style={{ width: `${size}px`, height: `${size}px`, fontWeight: 'bold' } }>ES</p>
+      return <p className='center' style={{ width: `${size}px`, height: `${size}px`, fontWeight: 'bold' }}>ES</p>
 
       // tech and tools
 
@@ -126,7 +126,7 @@ export const vendingIcons = (nameIcon: string, size: number) => {
       return <Icon width={size} icon="skill-icons:redux" />
 
     case 'zustand':
-      return <ZustandIcon/>
+      return <ZustandIcon />
 
     case 'expressjs':
       return <Icon width={size} icon="skill-icons:expressjs-dark" />

@@ -2,8 +2,10 @@
 import './index.css'
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { useLanguageStore } from '@/store/language'
 const Navigation = () => {
   const [route, setRoute] = useState('home')
+  const { language } = useLanguageStore()
 
   const handleRouteChange = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const menu = document.querySelector('.menu')
@@ -52,17 +54,35 @@ const Navigation = () => {
       <div className="nav__interaction">
         <div className="line" />
         <div className="circles-container">
-          <a onClick={handleRouteChange} href="#home" className={`circle-nav ${route === 'home' ? 'circle-nav--active' : 'circle-nav--disable'}`}></a>
-          <a onClick={handleRouteChange} href="#about" className={`circle-nav ${route === 'about' ? 'circle-nav--active' : 'circle-nav--disable'}`}></a>
-          <a onClick={handleRouteChange} href="#projects" className={`circle-nav ${route === 'projects' ? 'circle-nav--active' : 'circle-nav--disable'}`}></a>
-          <a onClick={handleRouteChange} href="#contact" className={`circle-nav ${route === 'contact' ? 'circle-nav--active' : 'circle-nav--disable'}`}></a>
+          {
+            language.header.navigation.map((option, index) => {
+              return (
+                <a
+                  key={index}
+                  onClick={handleRouteChange}
+                  href={option.href}
+                  className={`circle-nav ${route === option.href.split('#')[1] ? 'circle-nav--active' : 'circle-nav--disable'}`}
+                ></a>
+              )
+            })
+          }
         </div>
       </div>
       <nav className="nav__options">
-        <a onClick={handleRouteChange} className="option" href="#home">home</a>
-        <a onClick={handleRouteChange} className="option" href="#about">about</a>
-        <a onClick={handleRouteChange} className="option" href="#projects">projects</a>
-        <a onClick={handleRouteChange} className="option" href="#contact">contact</a>
+        {
+          language.header.navigation.map((option, index) => {
+            return (
+              <a
+                key={index}
+                onClick={handleRouteChange}
+                className="option"
+                href={option.href}
+              >
+                {option.title}
+              </a>
+            )
+          })
+        }
       </nav>
     </div>
   )
