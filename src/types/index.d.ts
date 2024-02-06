@@ -54,3 +54,17 @@ export interface Certificates {
   totalPages: number
   certificates: Certificate[]
 }
+
+export interface ContactForm {
+  name: string
+  email: string
+  subject: string
+  message: string
+}
+
+export interface ErrorContactForm {
+  name: string
+  email: string
+  subject: string
+  message: string
+}

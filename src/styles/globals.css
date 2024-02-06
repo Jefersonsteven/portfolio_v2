@@ -170,6 +170,12 @@ button {
   color: black;
 }
 
+.btn-primary:hover {
+  background: var(--bg-100);
+  color: var(--text-100);
+  transition: all 0.5s ease;
+}
+
 .btn-back {
   background-color: transparent;
   border: none;
