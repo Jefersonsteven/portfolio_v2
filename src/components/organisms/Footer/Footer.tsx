@@ -1,7 +1,10 @@
+'use client'
+import { useLanguageStore } from '@/store/language'
 import './index.css'
 import { Socials } from '@/components/molecules/Socials/Socials'
 
 export const Footer = () => {
+  const { language } = useLanguageStore()
   return (
     <footer className="page footer">
       <a title="home" href="/" className="home-action animate__animated animate__fadeInLeft">
@@ -13,16 +16,15 @@ export const Footer = () => {
 
       <p className="copy animate__animated animate__fadeInUpBig">
         <span>
-          Designed in Figma and coded in Visual Studio Code by yours truly{' '}
+          {language.footer[0]}{' '}
         </span>
         <strong>
           <a target="_blank" href="https://github.com/Jefersonsteven" rel="noreferrer">
-            @Jeffersonsteven.{' '}
+            {language.footer[1]}{' '}
           </a>
         </strong>
         <span>
-          Built with Astro, Reactjs, Prisma and CSS, implemented with Vercel. All
-          text is set in League Spartan and Montserrat font.
+          {language.footer[2]}
         </span>
       </p>
 

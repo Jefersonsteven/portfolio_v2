@@ -1,10 +1,11 @@
 'use client'
 import Card from '@/components/molecules/Card/Card'
-import data from '@/data/translate/en/data.json'
 import './index.css'
 import { useEffect, useRef, useState } from 'react'
+import { useLanguageStore } from '@/store/language'
 
 export const SliderProjects = () => {
+  const { language } = useLanguageStore()
   const [current, setCurrent] = useState(0)
   const slider = useRef<HTMLDivElement>(null)
 
@@ -38,7 +39,7 @@ export const SliderProjects = () => {
     <main className="slider">
       <section ref={slider} className="slider__projects">
         {
-          data.projects.data.slice(1, 4).map((project, index) => {
+          language.projects.data.slice(1, 4).map((project, index) => {
             return (
               <Card
                 key={crypto.randomUUID()}
@@ -70,7 +71,7 @@ export const SliderProjects = () => {
         </div>
         <div className="slider__points">
           {
-            data.projects.data.slice(1, 4).map((project, i) => {
+            language.projects.data.slice(1, 4).map((project, i) => {
               return (
                 <button
                   key={crypto.randomUUID()}

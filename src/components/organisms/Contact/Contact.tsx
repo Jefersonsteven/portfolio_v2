@@ -3,8 +3,10 @@ import { type ErrorContactForm, type ContactForm } from '@/types'
 import './index.css'
 import { useState } from 'react'
 import { verifyContactForm } from '@/libs/verifyContactForm'
+import { useLanguageStore } from '@/store/language'
 
 export const Contact = () => {
+  const { language } = useLanguageStore()
   const [form, setForm] = useState<ContactForm>({
     name: '',
     email: '',
@@ -55,33 +57,33 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="contact page pc">
-      <h2 className="heading contact__title">CONTACT</h2>
+      <h2 className="heading contact__title">{language.contact.title}</h2>
       <form onSubmit={handleSend as React.FormEventHandler<HTMLFormElement>} className="contact__form">
         <div className="contact__inputs">
           <label>
-            Name
-            <input type="text" placeholder="Pepito" onChange={handleChange} name="name" />
+            {language.contact.form.name.value}
+            <input type="text" placeholder={language.contact.form.name.placeholder} onChange={handleChange} name="name" />
             <span>{errors?.name}</span>
           </label>
           <label>
-            Email
-            <input type="email" onChange={handleChange} placeholder="pepito@email.com" name="email" />
+            {language.contact.form.email.value}
+            <input type="email" onChange={handleChange} placeholder={language.contact.form.email.placeholder} name="email" />
             <span>{errors?.email}</span>
           </label>
           <label>
-            Subject
-            <input type="text" onChange={handleChange} placeholder="Colaboración" name="subject" />
+            {language.contact.form.subject.value}
+            <input type="text" onChange={handleChange} placeholder={language.contact.form.subject.placeholder} name="subject" />
             <span>{errors?.subject}</span>
           </label>
           <label>
-            Message
-            <textarea onChange={handleChange} placeholder="Message ..." name="message"></textarea>
+            {language.contact.form.message.value}
+            <textarea onChange={handleChange} placeholder={language.contact.form.message.placeholder} name="message"></textarea>
             <span>{errors?.message}</span>
           </label>
         </div>
         <label onClick={handleClick} className='contact__button' itemType='button'>
           <div className='contact__button-border'></div>
-          <button className="btn btn-primary" title="send"> Send</button>
+          <button className="btn btn-primary" title="send">{language.contact.form.send}</button>
         </label>
       </form>
       <figure className="circles">

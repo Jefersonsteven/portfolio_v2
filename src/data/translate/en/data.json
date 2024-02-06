@@ -441,11 +441,29 @@
   },
   "contact": {
     "title": "Contact",
-    "content": "Ready to face challenges with bravery and passion."
+    "form": {
+      "name": {
+        "value": "Name",
+        "placeholder": "Peter Parker"
+      },
+      "email": {
+        "value": "Email",
+        "placeholder": "spiderman@email.com"
+      },
+      "subject": {
+        "value": "Subject",
+        "placeholder": "Work"
+      },
+      "message": {
+        "value": "Message",
+        "placeholder": "I'm a big fan of your work, I'd like to talk to you about a project."
+      },
+      "send": "Send"
+    }
   },
   "footer": [
     "Designed in Figma and coded in Visual Studio Code by yours truly",
     "@Jeffersonsteven.",
-    "Built with Next.js, Prisma and Sass, implemented with Vercel. All text is set in the Inter and Montserrat font."
+    "Built with CSS, Next.js and Prisma, implemented with Vercel. All text is set in the League Spartan and Montserrat font."
   ]
 }

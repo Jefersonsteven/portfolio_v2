@@ -441,11 +441,29 @@
   },
   "contact": {
     "title": "Contacto",
-    "content": "Listo para enfrentar desafíos con valentía y pasión."
+    "form": {
+      "name": {
+        "value": "Nombre",
+        "placeholder": "Pepito Perez"
+      },
+      "email": {
+        "value": "Correo Electrónico",
+        "placeholder": "pepitohub@email.com"
+      },
+      "subject": {
+        "value": "Asunto",
+        "placeholder": "Trabajo"
+      },
+      "message": {
+        "value": "Mensaje",
+        "placeholder": "Hola, me gustaría trabajar contigo en un proyecto."
+      },
+      "send": "Enviar"
+    }
   },
   "footer": [
     "Diseñado en Figma y codificado en Visual Studio Code por su servidor",
     "@Jeffersonsteven.",
-    "Construido con Next.js, Prisma y Sass, implementado con Vercel. Todo el texto está configurado en la fuente Inter y Montserrat."
+    "Construido con CSS, Next.js y Prisma, implementado con Vercel. Todo el texto está configurado en la fuente League Spartan y Montserrat."
   ]
 }
