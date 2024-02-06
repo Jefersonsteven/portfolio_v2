@@ -30,6 +30,12 @@
   }
   & .contact__form {
     z-index: 30;
+    & label {
+      & span {
+        color: #d44d4d;
+        font-weight: 700;
+      }
+    }
   }
 }
 
