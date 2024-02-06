@@ -51,7 +51,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
             <Mouse coordinates={coordinates} />
           }
           <figure className='background'>
-            <Image src="/assets/images/galaxy-bg.jpg" alt="background" width={1280} height={874} />
+            <Image className="background__image" src="/assets/images/galaxy-bg.jpg" alt="background" width={1280} height={874} />
           </figure>
           {children}
         </body>
