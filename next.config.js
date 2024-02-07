@@ -4,7 +4,6 @@
 const nextConfig = {
   env: {
     NEXT_PUBLIC_API_KEY_IP: process.env.NEXT_PUBLIC_API_KEY_IP,
-    NEXT_PUBLIC_RESEND_API_KEY_IP: process.env.NEXT_PUBLIC_RESEND_API_KEY_IP,
   },
 };
 
