@@ -3,7 +3,7 @@ import { Resend } from 'resend'
 import { type NextRequest, NextResponse } from 'next/server'
 import { type ContactForm } from '@/types'
 
-const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY_IP)
+const resend = new Resend(process.env.RESEND_API_KEY_IP)
 
 export async function POST (request: NextRequest) {
   const { name, email, subject, message }: ContactForm = await request.json()

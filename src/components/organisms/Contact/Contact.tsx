@@ -32,6 +32,13 @@ export const Contact = () => {
           method: 'POST',
           body: JSON.stringify(form)
         })
+
+        setForm({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        })
       } catch (error) {
         console.error(error)
       }
