@@ -28,13 +28,10 @@ export const Contact = () => {
       setErrors(errors)
     } else {
       try {
-        // const send = await fetch('/api/mail', {
-        //   method: 'POST',
-        //   body: JSON.stringify(form)
-        // })
-
-        // const data = await send.json()
-        // console.log(data)
+        await fetch('/api/mail', {
+          method: 'POST',
+          body: JSON.stringify(form)
+        })
       } catch (error) {
         console.error(error)
       }
@@ -62,22 +59,22 @@ export const Contact = () => {
         <div className="contact__inputs">
           <label>
             {language.contact.form.name.value}
-            <input type="text" placeholder={language.contact.form.name.placeholder} onChange={handleChange} name="name" />
+            <input type="text" placeholder={language.contact.form.name.placeholder} onChange={handleChange} name="name" value={form.name} />
             <span>{errors?.name}</span>
           </label>
           <label>
             {language.contact.form.email.value}
-            <input type="email" onChange={handleChange} placeholder={language.contact.form.email.placeholder} name="email" />
+            <input type="email" onChange={handleChange} placeholder={language.contact.form.email.placeholder} name="email" value={form.email} />
             <span>{errors?.email}</span>
           </label>
           <label>
             {language.contact.form.subject.value}
-            <input type="text" onChange={handleChange} placeholder={language.contact.form.subject.placeholder} name="subject" />
+            <input type="text" onChange={handleChange} placeholder={language.contact.form.subject.placeholder} name="subject" value={form.subject} />
             <span>{errors?.subject}</span>
           </label>
           <label>
             {language.contact.form.message.value}
-            <textarea onChange={handleChange} placeholder={language.contact.form.message.placeholder} name="message"></textarea>
+            <textarea onChange={handleChange} placeholder={language.contact.form.message.placeholder} name="message" value={form.message}></textarea>
             <span>{errors?.message}</span>
           </label>
         </div>
