@@ -28,13 +28,13 @@ export const Contact = () => {
       setErrors(errors)
     } else {
       try {
-        const send = await fetch('/api/mail', {
-          method: 'POST',
-          body: JSON.stringify(form)
-        })
+        // const send = await fetch('/api/mail', {
+        //   method: 'POST',
+        //   body: JSON.stringify(form)
+        // })
 
-        const data = await send.json()
-        console.log(data)
+        // const data = await send.json()
+        // console.log(data)
       } catch (error) {
         console.error(error)
       }
