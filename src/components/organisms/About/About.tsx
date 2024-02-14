@@ -32,11 +32,7 @@ export const About = () => {
             </p>
 
             <p>
-              {language.about_me.description[5].paragraph}
-            </p>
-
-            <p>
-              {language.about_me.description[6].paragraph}<strong> {language.about_me.description[0].paragraph}</strong>.
+              {language.about_me.description[5].paragraph} {language.about_me.description[6].paragraph}.
             </p>
 
             <p>
