@@ -27,7 +27,7 @@ export const About = () => {
 
         <section className="about__info">
           <article>
-            <p>{language.about_me.description[0].paragraph}<strong>{language.about_me.description[1].paragraph}</strong>{language.about_me.description[2].paragraph}<strong>{language.about_me.description[3].paragraph}</strong>
+            <p>{language.about_me.description[0].paragraph}<strong>{language.about_me.description[1].paragraph}</strong>{language.about_me.description[2].paragraph}<strong>{language.about_me.description[3].paragraph}</strong>{' '}
               {language.about_me.description[4].paragraph}
             </p>
 
