@@ -1,7 +1,6 @@
 'use client'
 import './index.css'
-import React, { useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
+import React, { useState } from 'react'
 import { useLanguageStore } from '@/store/language'
 const Navigation = () => {
   const [route, setRoute] = useState('home')
@@ -12,42 +11,6 @@ const Navigation = () => {
     menu?.classList.remove('active')
     setRoute(event.currentTarget.href.split('#')[1])
   }
-
-  const handleResize = () => {
-    const pathname = window.location.pathname
-    if (window.innerWidth > 1130 && pathname === '/') {
-      router.push('/#home')
-      setRoute('home')
-    }
-  }
-
-  const router = useRouter()
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize)
-
-    const body = document.documentElement
-    if (body === null) return
-    const { pathname } = window?.location
-
-    const handleScroll = (e: WheelEvent) => {
-      if (pathname === '/') {
-        if (e.deltaY > 0) {
-          body.scrollBy({
-            left: body.offsetWidth,
-            behavior: 'smooth'
-          })
-        } else {
-          body.scrollBy({
-            left: -body.offsetWidth,
-            behavior: 'smooth'
-          })
-        }
-      }
-    }
-
-    body?.addEventListener('wheel', handleScroll)
-  }, [])
 
   return (
     <div className="nav">

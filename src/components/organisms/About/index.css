@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 36px;
   position: relative;
-  scroll-snap-align: start;
   & main {
     display: flex;
     flex-direction: column;

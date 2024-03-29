@@ -60,7 +60,7 @@ export const Contact = () => {
   }
 
   return (
-    <section id="contact" className="contact page pc">
+    <section id="contact" className="contact page pc snap-item">
       <h2 className="heading contact__title">{language.contact.title}</h2>
       <form onSubmit={handleSend as React.FormEventHandler<HTMLFormElement>} className="contact__form">
         <div className="contact__inputs">

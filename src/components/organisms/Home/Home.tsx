@@ -7,7 +7,7 @@ export const Home = () => {
   const { language } = useLanguageStore()
 
   return (
-    <section id='home' className="home page pc">
+    <section id='home' className="home page pc snap-item">
       <figure>
         <div className="circle-primary" />
         <div className="circle-secondary" />
@@ -19,9 +19,6 @@ export const Home = () => {
         </h2>
       </main>
       <footer>
-        <p className="home__scroll-for-more-container animate__animated animate__fadeInUp">
-          <strong className="home__scroll-for-more" />
-        </p>
         <ArrowHome />
       </footer>
     </section>

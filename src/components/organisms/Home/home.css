@@ -1,5 +1,4 @@
 .home {
-  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,28 +38,7 @@
   }
 }
 
-.home__scroll-for-more::before {
-  content: "Swipe for more";
-}
-
-.home__arrow-scroll {
-  transform: rotate(90deg) scale(40%);
-}
-
 @media (width >= 1130px) {
-  .home__scroll-for-more::before {
-    content: "Scroll for more";
-  }
-  .home__arrow-scroll {
-    transform: rotate(0deg) scale(100%);
-  }
-  .home__scroll-for-more-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-left: 120px;
-  }
-
   .home {
     & figure {
       position: absolute;
@@ -84,8 +62,7 @@
       }
     }
     & footer {
-      flex-direction: row;
-      justify-content: space-between;
+      align-items: center;
     }
   }
 }

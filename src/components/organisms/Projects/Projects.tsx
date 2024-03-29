@@ -7,7 +7,7 @@ export const Projects = () => {
   const { language } = useLanguageStore()
 
   return (
-    <section id="projects" className="page projects">
+    <section id="projects" className="page projects snap-item">
       <h2 className="heading">{language.projects.title}</h2>
       <SliderProjects />
       <figure className="circles">

@@ -9,7 +9,7 @@ export const About = () => {
   const { language } = useLanguageStore()
 
   return (
-    <section id="about" className="about page pc">
+    <section id="about" className="about page pc snap-item">
       <header>
         <h2 className="heading">{language.about_me.title}</h2>
       </header>
