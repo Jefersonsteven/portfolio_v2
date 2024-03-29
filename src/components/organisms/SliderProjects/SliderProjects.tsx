@@ -62,7 +62,6 @@ export const SliderProjects = () => {
           {
             current !== 0 && <button onClick={prevSlide} type='button' className="slider__arrow a-left reset-button">
               <img
-                className="home__arrow-scroll"
                 src="/assets/svgs/arrow-left.svg"
                 alt="arrow"
               />
@@ -87,7 +86,6 @@ export const SliderProjects = () => {
         <div className='slider__arrow-container'>
           {current !== 2 && <button onClick={nextSlide} type='button' className="slider__arrow a-right reset-button">
             <img
-              className="home__arrow-scroll"
               src="/assets/svgs/arrow-right.svg"
               alt="arrow"
             />

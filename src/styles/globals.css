@@ -12,6 +12,7 @@ html {
   font-size: 62.5%;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .body {
@@ -20,10 +21,6 @@ html {
   background-color: var(--bg-100);
   width: 100vw;
   height: 100vh;
-}
-
-.snap-item {
-  scroll-snap-align: center;
 }
 
 .background {
@@ -292,14 +289,13 @@ textarea:focus {
     height: 351px;
   }
 
-  .body {
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: none;
-  }
-
   .pc {
     padding: 66px 72px 132px 180px;
     min-width: 100dvw;
+  }
+
+  .snap-item {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 }
