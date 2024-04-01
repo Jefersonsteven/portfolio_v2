@@ -38,14 +38,14 @@ export const Header = () => {
 
       <div className='header__content'>
         <Views />
-        <button
+{/*         <button
           type='button'
           aria-describedby="configuration"
           title="Configuration"
           className="reset-button animate__animated animate__fadeInRight"
         >
           <img src="/assets/svgs/settings.svg" alt="configuration" />
-        </button>
+        </button> */}
       </div>
     </header>
   )
